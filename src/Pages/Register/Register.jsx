@@ -143,8 +143,12 @@ const Register = () => {
                </div>
 
                {/* login button */}
-               <button className="btn block w-full mt-9 rounded-none border-ourGold bg-ourGold text-white uppercase font-light text-base tracking-[2px] hover:opacity-80 hover:bg-ourGold hover:border-ourGold">
-                  register
+
+               <button className="mt-9 w-full px-6 py-3.5 relative group overflow-hidden inline-block border-ourGold bg-ourGold text-white uppercase font-light text-base tracking-[2px] transition-transform duration-300 ease-out transform active:scale-95">
+                  <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-300 ease-out transform translate-y-0 bg-ourBlack group-hover:w-full opacity-90"></span>
+                  <span className="relative group-hover:text-white">
+                     register
+                  </span>
                </button>
             </form>
 
