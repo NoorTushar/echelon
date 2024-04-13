@@ -1,4 +1,5 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import LoginButton from "./LoginButton";
 
 const navItems = (
    <>
@@ -16,7 +17,7 @@ const navItems = (
 
 const NavBar = () => {
    return (
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-ourBlack py-4">
          <div className="navbar-start">
             <div className="dropdown">
                <div
@@ -41,18 +42,25 @@ const NavBar = () => {
                </div>
                <ul
                   tabIndex={0}
-                  className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                  className="menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow bg-ourBlack text-ourAsh text-[15px] font-light tracking-widest uppercase rounded-box w-52 closed-navItems"
                >
                   {navItems}
                </ul>
             </div>
-            <a className="btn btn-ghost text-xl">daisyUI</a>
+            <Link
+               to={"/"}
+               className="text-3xl font-medium text-white cursor-pointer tracking-wider"
+            >
+               ECHELON
+            </Link>
          </div>
          <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1 space-x-4">{navItems}</ul>
+            <ul className="menu menu-horizontal px-1 space-x-4 text-ourAsh text-[15px] font-light tracking-widest uppercase">
+               {navItems}
+            </ul>
          </div>
          <div className="navbar-end">
-            <a className="btn">Button</a>
+            <LoginButton></LoginButton>
          </div>
       </div>
    );

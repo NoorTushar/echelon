@@ -12,3 +12,18 @@ p {
   font-family: "Didact Gothic", sans-serif;
 
 */
+ul li a.active {
+   background-color: red;
+   color: red;
+}
+
+.closed-navItems li a {
+   margin-top: 5px;
+   margin-bottom: 5px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+.closed-navItems li a.active {
+   background-color: red;
+}

@@ -13,8 +13,12 @@ export default {
          },
          textColor: {
             ourGold: "#8E6D45",
+            ourBlack: "#1E1E1E",
             navItemAsh: "#888888",
             ourAsh: "#999999",
+         },
+         borderColor: {
+            ourGold: "#8E6D45",
          },
       },
    },
