@@ -1,8 +1,7 @@
 import { useForm } from "react-hook-form";
 import SectionTitle from "../../Components/Shared/SectionTitle";
 import { useState } from "react";
-import { FaGoogle, FaGithub, FaEyeSlash, FaRegEye } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaEyeSlash, FaRegEye } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Register = () => {
@@ -19,10 +18,12 @@ const Register = () => {
    console.log(errors);
 
    const onSubmit = () => {
+      const userName = getValues("userName");
       const email = getValues("email");
+      const photoURL = getValues("photoURL");
       const password = getValues("password");
 
-      console.log(email, password);
+      console.log(userName, email, photoURL, password);
 
       // login with username and password
       //   loginUser(email, password)
