@@ -19,6 +19,7 @@ export default {
          },
          borderColor: {
             ourGold: "#8E6D45",
+            ourAsh: "#999999",
          },
       },
    },
