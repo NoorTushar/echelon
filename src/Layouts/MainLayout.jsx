@@ -3,7 +3,7 @@ import NavBar from "../Components/Shared/NavBar";
 
 const MainLayout = () => {
    return (
-      <div>
+      <div className="font-oswald">
          <NavBar></NavBar>
          <Outlet></Outlet>
       </div>
