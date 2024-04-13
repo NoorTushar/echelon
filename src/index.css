@@ -27,3 +27,10 @@ ul li a.active {
 .closed-navItems li a.active {
    background-color: red;
 }
+
+input:-webkit-autofill {
+   -webkit-box-shadow: 0 0 0 1000px #1e1e1e inset;
+   /* Change #000 to your desired background color */
+   -webkit-text-fill-color: #999999 !important;
+   /* Change #fff to your desired text color */
+}
