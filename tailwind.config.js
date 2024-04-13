@@ -10,6 +10,7 @@ export default {
          backgroundColor: {
             ourGold: "#8E6D45",
             ourBlack: "#1E1E1E",
+            ourAsh: "#999999",
          },
          textColor: {
             ourGold: "#8E6D45",

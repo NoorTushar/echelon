@@ -42,14 +42,14 @@ const NavBar = () => {
                </div>
                <ul
                   tabIndex={0}
-                  className="menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow bg-ourBlack text-ourAsh text-[15px] font-light tracking-widest uppercase rounded-box w-52 closed-navItems"
+                  className="menu menu-sm dropdown-content mt-3 z-[10] p-4 shadow bg-ourBlack text-ourAsh text-[15px] font-light tracking-widest uppercase  w-52 closed-navItems"
                >
                   {navItems}
                </ul>
             </div>
             <Link
                to={"/"}
-               className="text-3xl font-medium text-white cursor-pointer tracking-wider"
+               className="text-3xl font-medium text-white cursor-pointer tracking-wider hover:text-ourGold duration-300"
             >
                ECHELON
             </Link>
