@@ -3,16 +3,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/navigation";
-
+import "swiper/css/bundle";
 // import required modules
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 
 import { Link } from "react-router-dom";
 
 const Banner = () => {
    return (
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <Swiper
+         navigation={true}
+         pagination={true}
+         modules={[Navigation, Pagination]}
+         className="mySwiper"
+      >
          {/* item 01 */}
          <SwiperSlide>
             <div
