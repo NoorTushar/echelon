@@ -4,6 +4,7 @@ import { FaHome } from "react-icons/fa";
 
 const Estate = ({ eachState }) => {
    const {
+      id,
       estate_title,
       segment_name,
       description,
@@ -57,7 +58,10 @@ const Estate = ({ eachState }) => {
                      ))}
                   </ul>
                </div>
-               <Link className="px-6 py-3.5 w-1/2 mx-auto relative group overflow-hidden inline-block border-ourGold bg-ourGold text-white uppercase font-light text-base tracking-[2px] transition-transform duration-300 ease-out transform active:scale-95 text-center">
+               <Link
+                  to={`/details/${id}`}
+                  className="px-6 py-3.5 w-1/2 mx-auto relative group overflow-hidden inline-block border-ourGold bg-ourGold text-white uppercase font-light text-base tracking-[2px] transition-transform duration-300 ease-out transform active:scale-95 text-center"
+               >
                   <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-300 ease-out transform translate-y-0 bg-ourBlack group-hover:w-full opacity-90"></span>
                   <span className="relative group-hover:text-white">
                      view details
