@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaHome } from "react-icons/fa";
+import { MdDone } from "react-icons/md";
 
 const Estate = ({ eachState }) => {
    const {
@@ -40,22 +41,33 @@ const Estate = ({ eachState }) => {
                   <h2 className="text-[20px] font-light tracking-[2px] uppercase ">
                      {estate_title}
                   </h2>
-                  <p className="flex items-center gap-1">
-                     <FaLocationDot></FaLocationDot> {location}
+                  <p className="flex items-center gap-2">
+                     <FaLocationDot className="text-ourGold text-lg"></FaLocationDot>{" "}
+                     {location}
                   </p>
-                  <p className="flex items-center gap-1">
-                     <FaHome></FaHome> {area}
+                  <p className="flex items-center gap-2">
+                     <FaHome className="text-ourGold text-lg"></FaHome> {area}
                   </p>
-                  <p className="">
-                     {description.length > 200
-                        ? description.slice(0, 200)
-                        : description}
-                  </p>
+
+                  {description.length > 140 ? (
+                     <p>{description.slice(0, 140)} ...</p>
+                  ) : (
+                     <p>{description}</p>
+                  )}
+
                   <ul className="font-didact">
                      Facilities:
-                     {facilities.map((facility) => (
-                        <li className="list-disc ml-5">{facility}</li>
-                     ))}
+                     {facilities.map((facility, index) => {
+                        return (
+                           <li
+                              key={index}
+                              className="font-didact flex items-center gap-2"
+                           >
+                              <MdDone className="text-ourGold"></MdDone>{" "}
+                              {facility}
+                           </li>
+                        );
+                     })}
                   </ul>
                </div>
                <Link

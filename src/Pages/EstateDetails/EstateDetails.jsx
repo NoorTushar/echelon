@@ -1,5 +1,6 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { MdDone } from "react-icons/md";
 
 const EstateDetails = () => {
    const allEstates = useLoaderData();
@@ -23,7 +24,6 @@ const EstateDetails = () => {
    } = matchedEstate;
    return (
       <section className="max-w-[1170px] mx-auto w-[90%] md:w-[80%]">
-         <h3>Estate details : {id}</h3>
          {/* top */}
          <div className="w-full relative">
             {/* image */}
@@ -33,7 +33,7 @@ const EstateDetails = () => {
                alt=""
             />
             {/* information */}
-            <div className="text-center lg:text-start relative w-3/4 mx-auto grid space-y-4 md:space-y-0 md:grid-cols-3 border p-8 z-10 bg-[#252525] left-0 right-0 bottom-14">
+            <div className="text-center lg:text-start relative w-[85%] md:w-3/4 mx-auto grid gap-8 lg:gap-0 md:grid-cols-2 grid-cols-2 lg:grid-cols-4 border p-8 z-10 bg-[#252525] left-0 right-0 bottom-14">
                {/* 1 */}
                <div className="">
                   <h3 className="font-light text-[15px] tracking-[3px] uppercase mb-1.5">
@@ -50,12 +50,22 @@ const EstateDetails = () => {
                   <p className="text-[15px] tracking-[0.25px]">{location}</p>
                </div>
 
-               {/* 2 */}
+               {/* 3 */}
                <div className="">
                   <h3 className="font-light text-[15px] tracking-[3px] uppercase mb-1.5">
                      size
                   </h3>
                   <p className="text-[15px] tracking-[0.25px]">{area}</p>
+               </div>
+
+               {/* 4 */}
+               <div className="">
+                  <h3 className="font-light text-[15px] tracking-[3px] uppercase mb-1.5">
+                     status
+                  </h3>
+                  <p className="text-[15px] tracking-[0.25px] capitalize">
+                     {status}
+                  </p>
                </div>
             </div>
          </div>
@@ -69,13 +79,16 @@ const EstateDetails = () => {
                {estate_title}
             </h2>
 
-            <p>{description}</p>
+            <p className="">{description}</p>
 
-            <ul>
+            <ul className="my-7">
                {facilities.map((facility, index) => {
                   return (
-                     <li key={index} className="font-didact">
-                        {facility}
+                     <li
+                        key={index}
+                        className="font-didact flex items-center gap-4"
+                     >
+                        <MdDone className="text-ourGold"></MdDone> {facility}
                      </li>
                   );
                })}
