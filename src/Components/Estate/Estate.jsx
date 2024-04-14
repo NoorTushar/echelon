@@ -16,15 +16,14 @@ const Estate = ({ eachState }) => {
    } = eachState;
    return (
       <div>
-         <div className="border border-gray-700 h-full">
-            <div className="relative">
-               <div className="">
-                  <img
-                     src={estate_image_small}
-                     alt=""
-                     className="object-cover object-center w-full h-72"
-                  />
-               </div>
+         <div className="border border-ourGold h-full">
+            <div className="relative overflow-hidden">
+               <img
+                  src={estate_image_small}
+                  alt=""
+                  className="object-cover object-center w-full h-72 hover:scale-110 duration-300"
+               />
+
                <span className="absolute font-light tracking-[1px] px-4 py-2  bg-ourBlack top-0 right-0 uppercase">
                   {status}
                </span>
