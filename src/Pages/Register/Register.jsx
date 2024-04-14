@@ -19,8 +19,6 @@ const Register = () => {
       formState: { errors },
    } = useForm();
 
-   console.log(errors);
-
    const onSubmit = () => {
       const userName = getValues("userName");
       const email = getValues("email");
@@ -125,6 +123,16 @@ const Register = () => {
                            required: {
                               value: true,
                               message: "Must provide a password.",
+                           },
+                           minLength: {
+                              value: 6,
+                              message:
+                                 "Password must be at least of 6 characters",
+                           },
+                           pattern: {
+                              value: /^(?=.*[A-Z])(?=.*[a-z])(?=.*[\d!@#$%^&*()]?).{6,}$/,
+                              message:
+                                 "Must have at least one uppercase letter and one lowercase letter.",
                            },
                         })}
                         type={showPassword ? "text" : "password"}
