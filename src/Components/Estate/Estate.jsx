@@ -1,42 +1,41 @@
-const Estate = () => {
+const Estate = ({ eachState }) => {
+   const {
+      estate_title,
+      segment_name,
+      description,
+      price,
+      status,
+      area,
+      location,
+      facilities,
+      estate_image_small,
+   } = eachState;
    return (
-      <div className="p-4 shadow-md bg-gray-900 text-gray-100">
-         <div className="flex justify-between pb-4 border-bottom">
-            <div className="flex items-center">
-               <a
-                  rel="noopener noreferrer"
-                  href="#"
-                  className="mb-0 capitalize text-gray-100"
-               >
-                  Photography
-               </a>
-            </div>
-            <a rel="noopener noreferrer" href="#">
-               See All
-            </a>
-         </div>
-         <div className="space-y-4">
-            <div className="space-y-2">
+      <div>
+         <div className="shadow-md bg-gray-900 text-gray-100">
+            <div>
                <img
-                  src="https://source.unsplash.com/random/480x360/?4"
+                  src={estate_image_small}
                   alt=""
-                  className="block object-cover object-center w-full rounded-md h-72 bg-gray-500"
+                  className="object-cover object-center w-full h-72 bg-gray-500"
                />
-               <div className="flex items-center text-xs">
-                  <span>6 min ago</span>
-               </div>
             </div>
-            <div className="space-y-2">
-               <a rel="noopener noreferrer" href="#" className="block">
-                  <h3 className="text-xl font-semibold text-violet-400">
-                     Facere ipsa nulla corrupti praesentium pariatur architecto
-                  </h3>
-               </a>
-               <p className="leading-snug text-gray-400">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Repellat, excepturi. Lorem ipsum dolor sit amet consectetur,
-                  adipisicing elit. Repellat, excepturi.
-               </p>
+            <div className="flex flex-col justify-between p-6 space-y-8">
+               <div className="space-y-2">
+                  <h2 className="text-3xl font-semibold tracking-wide">
+                     Donec lectus leo
+                  </h2>
+                  <p className="text-gray-100">
+                     Curabitur luctus erat nunc, sed ullamcorper erat vestibulum
+                     eget.
+                  </p>
+               </div>
+               <button
+                  type="button"
+                  className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-violet-400 text-gray-900"
+               >
+                  Read more
+               </button>
             </div>
          </div>
       </div>

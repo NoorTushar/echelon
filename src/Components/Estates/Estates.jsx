@@ -11,7 +11,7 @@ const Estates = () => {
 
    return (
       <div>
-         <div className="grid lg:grid-cols-3">{mappedEstates}</div>
+         <div className="grid lg:grid-cols-3 gap-6">{mappedEstates}</div>
       </div>
    );
 };
