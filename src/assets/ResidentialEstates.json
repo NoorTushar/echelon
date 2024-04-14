@@ -1,0 +1,159 @@
+[
+   {
+      "id": 1,
+      "estate_title": "Luxury Villa with Ocean View",
+      "segment_name": "Single-family homes",
+      "description": "A stunning luxury villa overlooking the ocean, perfect for those seeking tranquility and luxury living.",
+      "price": "$2,500,000",
+      "status": "sale",
+      "area": "5000 sq ft",
+      "location": "Malibu, California",
+      "facilities": ["Infinity pool", "Spa", "Gourmet kitchen"],
+      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+   },
+   {
+      "id": 2,
+      "estate_title": "Spacious Family Home with Garden",
+      "segment_name": "Single-family homes",
+      "description": "Comfortable family home with a large garden, perfect for outdoor gatherings and relaxation.",
+      "price": "$1,800,000",
+      "status": "rent",
+      "area": "3500 sq ft",
+      "location": "Seattle, Washington",
+      "facilities": ["Spacious backyard", "Modern kitchen", "Home office"],
+      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+   },
+   {
+      "id": 3,
+      "estate_title": "Cozy Suburban Townhome",
+      "segment_name": "Single-family homes",
+      "description": "Comfortable townhome nestled in a quiet suburban neighborhood, ideal for families and commuters.",
+      "price": "$700,000",
+      "status": "sale",
+      "area": "2200 sq ft",
+      "location": "Denver, Colorado",
+      "facilities": ["Attached garage", "Community pool", "Patio"],
+      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+   },
+   {
+      "id": 4,
+      "estate_title": "Modern Downtown Apartment",
+      "segment_name": "Apartments",
+      "description": "Sleek and modern apartment located in the heart of downtown, offering convenience and luxury living.",
+      "price": "$1,200,000",
+      "status": "sale",
+      "area": "1500 sq ft",
+      "location": "New York City, New York",
+      "facilities": ["Fitness center", "Rooftop terrace", "Concierge service"],
+      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+   },
+   {
+      "id": 5,
+      "estate_title": "Downtown Loft with City Views",
+      "segment_name": "Apartments",
+      "description": "Industrial-style loft in the heart of downtown, offering panoramic city views and urban living.",
+      "price": "$1,500,000",
+      "status": "rent",
+      "area": "1800 sq ft",
+      "location": "Los Angeles, California",
+      "facilities": [
+         "Open-concept living space",
+         "Exposed brick walls",
+         "Private balcony"
+      ],
+      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+   },
+   {
+      "id": 6,
+      "estate_title": "Beachfront Condo with Ocean Views",
+      "segment_name": "Apartments",
+      "description": "Bright and airy condo located right on the beach, offering stunning ocean views and coastal living.",
+      "price": "$2,000/week",
+      "status": "rent",
+      "area": "1000 sq ft",
+      "location": "Miami, Florida",
+      "facilities": ["Private balcony", "Beach access", "Fitness center"],
+      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+   },
+   {
+      "id": 7,
+      "estate_title": "Charming Townhouse in Historic District",
+      "segment_name": "Townhouses",
+      "description": "Beautifully restored townhouse located in a historic district, blending classic charm with modern amenities.",
+      "price": "$800,000",
+      "status": "rent",
+      "area": "2000 sq ft",
+      "location": "Charleston, South Carolina",
+      "facilities": ["Private garden", "Fireplace", "Original hardwood floors"],
+      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+   },
+   {
+      "id": 8,
+      "estate_title": "Spacious Townhome in Suburban Area",
+      "segment_name": "Townhouses",
+      "description": "Spacious townhome nestled in a quiet suburban area, offering a peaceful retreat with modern conveniences.",
+      "price": "$650,000",
+      "status": "sale",
+      "area": "1800 sq ft",
+      "location": "Houston, Texas",
+      "facilities": ["Community pool", "Fitness center", "Outdoor patio"],
+      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+   },
+   {
+      "id": 9,
+      "estate_title": "Luxury Vacation Villa with Pool",
+      "segment_name": "Vacation rentals",
+      "description": "Luxurious vacation villa with a private pool and stunning views, perfect for a relaxing getaway.",
+      "price": "$500/night",
+      "status": "rent",
+      "area": "3000 sq ft",
+      "location": "Maui, Hawaii",
+      "facilities": ["Private pool", "Oceanfront location", "Gourmet kitchen"],
+      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+   },
+   {
+      "id": 10,
+      "estate_title": "Seaside Vacation Rental Cottage",
+      "segment_name": "Vacation rentals",
+      "description": "Cozy cottage nestled along the coastline, offering breathtaking views and a peaceful retreat.",
+      "price": "$300/night",
+      "status": "rent",
+      "area": "800 sq ft",
+      "location": "Cape Cod, Massachusetts",
+      "facilities": ["Direct beach access", "Outdoor dining area", "Fire pit"],
+      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+   },
+   {
+      "id": 11,
+      "estate_title": "Mountain Retreat Cabin",
+      "segment_name": "Vacation rentals",
+      "description": "Rustic cabin nestled in the mountains, perfect for a secluded getaway and outdoor adventures.",
+      "price": "$250/night",
+      "status": "sale",
+      "area": "1200 sq ft",
+      "location": "Asheville, North Carolina",
+      "facilities": [
+         "Wood-burning fireplace",
+         "Hiking trails nearby",
+         "Deck with mountain views"
+      ],
+      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+   },
+
+   {
+      "id": 12,
+      "estate_title": "Modern Townhouse with Rooftop Terrace",
+      "segment_name": "Townhouses",
+      "description": "Contemporary townhouse featuring sleek design and a spacious rooftop terrace, perfect for entertaining.",
+      "price": "$900,000",
+      "status": "sale",
+      "area": "2200 sq ft",
+      "location": "San Francisco, California",
+      "facilities": [
+         "Rooftop terrace",
+         "Modern kitchen",
+         "Smart home technology"
+      ],
+      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+   }
+]

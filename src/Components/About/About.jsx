@@ -9,16 +9,18 @@ const About = () => {
          ></SectionTitle>
 
          <div className="lg:flex">
-            <p className=" p-4 lg:w-1/3 bg-ourBlack  h-min">
-               At Echelon, we pride ourselves on being more than just a real
-               estate agency – we are your trusted partner in finding your dream
-               home or investment property. With years of experience and a
-               commitment to excellence, our team of dedicated agents
-               understands the unique needs and desires of each client. Whether
-               you're a first-time homebuyer, seasoned investor, or looking to
-               sell your property, we provide personalized service and expert
-               guidance every step of the way.
-            </p>
+            <div className=" p-4 lg:w-1/3 bg-ourBlack  h-min">
+               <p>
+                  At Echelon, we pride ourselves on being more than just a real
+                  estate agency – we are your trusted partner in finding your
+                  dream home or investment property. With years of experience
+                  and a commitment to excellence, our team of dedicated agents
+                  understands the unique needs and desires of each client.
+                  Whether you're a first-time homebuyer, seasoned investor, or
+                  looking to sell your property, we provide personalized service
+                  and expert guidance every step of the way.
+               </p>
+            </div>
 
             <div className="lg:w-2/3 ">
                <img
