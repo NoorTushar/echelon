@@ -10,7 +10,7 @@ const Register = () => {
    const [showPassword, setShowPassword] = useState(false);
    const [errorMessage, setErrorMessage] = useState(null);
 
-   const test = useAuthContext();
+   const { createUser } = useAuthContext();
 
    const {
       register,
@@ -27,15 +27,13 @@ const Register = () => {
 
       console.log(userName, email, photoURL, password);
 
-      // login with username and password
-      //   loginUser(email, password)
-      //      .then((result) => {
-      //         console.log(result.user);
-      //         locationState ? navigate(locationState) : navigate("/");
-      //      })
-      //      .catch((error) => {
-      //         console.error(error);
-      //      });
+      createUser(email, password)
+         .then((result) => {
+            console.log(result.user);
+         })
+         .catch((error) => {
+            console.error(error);
+         });
    };
 
    return (
