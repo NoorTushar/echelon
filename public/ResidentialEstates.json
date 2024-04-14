@@ -3,7 +3,7 @@
       "id": 1,
       "estate_title": "Luxury Villa with Ocean View",
       "segment_name": "Single-family homes",
-      "description": "A stunning luxury villa overlooking the ocean, perfect for those seeking tranquility and luxury living.",
+      "description": "Step into a world of unparalleled luxury and breathtaking beauty with this stunning villa perched on a cliff overlooking the majestic Pacific Ocean. Spread across 5000 square feet of meticulously designed living space, this architectural marvel seamlessly blends modern elegance with coastal charm. From the moment you enter, you'll be greeted by sweeping views of the ocean through floor-to-ceiling windows, inviting natural light to dance across the expansive interiors. The epitome of opulence, this residence boasts an infinity pool that seemingly merges with the azure horizon, a private spa where you can indulge in ultimate relaxation, and a gourmet kitchen equipped with state-of-the-art appliances for culinary enthusiasts. Located in the prestigious enclave of Malibu, California, this is more than just a home—it's a sanctuary for those who demand nothing but the best.",
       "price": "$2,500,000",
       "status": "sale",
       "area": "5000 sq ft",
@@ -15,7 +15,7 @@
       "id": 2,
       "estate_title": "Spacious Family Home with Garden",
       "segment_name": "Single-family homes",
-      "description": "Comfortable family home with a large garden, perfect for outdoor gatherings and relaxation.",
+      "description": "Nestled in the heart of Seattle's lush landscape, this spacious family home offers the perfect blend of comfort and tranquility. With 3500 square feet of living space, there's ample room for the whole family to spread out and relax. Step outside into your own private oasis—a sprawling garden bursting with vibrant flora and shaded alcoves, ideal for outdoor gatherings and lazy afternoons basking in the sun. Inside, the home exudes warmth and hospitality, with a modern kitchen that beckons aspiring chefs to create culinary masterpieces and a dedicated home office space for those who require a quiet retreat to focus and excel. Located in a serene neighborhood in Seattle, Washington, this home is the epitome of suburban bliss.",
       "price": "$1,800,000",
       "status": "rent",
       "area": "3500 sq ft",
@@ -27,7 +27,7 @@
       "id": 3,
       "estate_title": "Cozy Suburban Townhome",
       "segment_name": "Single-family homes",
-      "description": "Comfortable townhome nestled in a quiet suburban neighborhood, ideal for families and commuters.",
+      "description": "Tucked away in a picturesque corner of Denver's suburban landscape, this cozy townhome offers a serene escape from the hustle and bustle of city life. Boasting 2200 square feet of thoughtfully designed living space, this residence is perfect for families seeking both comfort and convenience. Step inside to discover a welcoming ambiance, with an attached garage providing direct access to the home, eliminating the hassle of parking. Outside, a charming patio beckons for al fresco dining or leisurely evenings spent under the stars. And when it's time to cool off, take a dip in the community pool just steps away from your front door. With easy access to highways and amenities, this townhome offers the ideal blend of suburban living and urban convenience.",
       "price": "$700,000",
       "status": "sale",
       "area": "2200 sq ft",
@@ -39,7 +39,7 @@
       "id": 4,
       "estate_title": "Modern Downtown Apartment",
       "segment_name": "Apartments",
-      "description": "Sleek and modern apartment located in the heart of downtown, offering convenience and luxury living.",
+      "description": "Embrace the vibrant energy of New York City from the comfort of this sleek and modern downtown apartment. Situated in the heart of the city that never sleeps, this residence offers unparalleled access to the best that NYC has to offer. Boasting 1500 square feet of luxurious living space, this apartment features floor-to-ceiling windows that frame breathtaking views of the iconic skyline, creating an ambiance of urban sophistication. Inside, discover a wealth of amenities designed to elevate your lifestyle, including a fully equipped fitness center to keep you active and a rooftop terrace where you can unwind and take in panoramic vistas of the city below. With concierge service available around the clock, every convenience is at your fingertips in this urban oasis.",
       "price": "$1,200,000",
       "status": "sale",
       "area": "1500 sq ft",
@@ -51,7 +51,7 @@
       "id": 5,
       "estate_title": "Downtown Loft with City Views",
       "segment_name": "Apartments",
-      "description": "Industrial-style loft in the heart of downtown, offering panoramic city views and urban living.",
+      "description": "Indulge in the epitome of urban chic with this industrial-style loft nestled in the heart of downtown Los Angeles. With 1800 square feet of open-concept living space, this loft offers a canvas for creativity and self-expression, with exposed brick walls and soaring ceilings that exude an air of raw sophistication. Floor-to-ceiling windows flood the space with natural light, offering panoramic views of the bustling city below. Step outside onto your private balcony and savor the sights and sounds of downtown LA, or retreat indoors and let your imagination run wild in the expansive living area. With a modern kitchen perfect for entertaining and a prime location close to shops, restaurants, and entertainment venues, this loft embodies the essence of contemporary urban living.",
       "price": "$1,500,000",
       "status": "rent",
       "area": "1800 sq ft",
@@ -67,7 +67,7 @@
       "id": 6,
       "estate_title": "Beachfront Condo with Ocean Views",
       "segment_name": "Apartments",
-      "description": "Bright and airy condo located right on the beach, offering stunning ocean views and coastal living.",
+      "description": "Experience the ultimate beachfront lifestyle with this bright and airy condo located just steps from the pristine shores of Miami Beach. With 1000 square feet of thoughtfully designed living space, this residence offers the perfect blend of comfort and coastal charm. Wake up to the soothing sound of waves crashing against the shore, as sunlight streams through the floor-to-ceiling windows, illuminating the interior with a warm and inviting glow. Step outside onto your private balcony and breathe in the salty sea air as you gaze out at endless vistas of turquoise waters stretching to the horizon. With beach access right at your doorstep and a fitness center for staying active, this condo is the epitome of coastal living at its finest.",
       "price": "$2,000/week",
       "status": "rent",
       "area": "1000 sq ft",
@@ -75,35 +75,12 @@
       "facilities": ["Private balcony", "Beach access", "Fitness center"],
       "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
    },
+
    {
       "id": 7,
-      "estate_title": "Charming Townhouse in Historic District",
-      "segment_name": "Townhouses",
-      "description": "Beautifully restored townhouse located in a historic district, blending classic charm with modern amenities.",
-      "price": "$800,000",
-      "status": "rent",
-      "area": "2000 sq ft",
-      "location": "Charleston, South Carolina",
-      "facilities": ["Private garden", "Fireplace", "Original hardwood floors"],
-      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
-   },
-   {
-      "id": 8,
-      "estate_title": "Spacious Townhome in Suburban Area",
-      "segment_name": "Townhouses",
-      "description": "Spacious townhome nestled in a quiet suburban area, offering a peaceful retreat with modern conveniences.",
-      "price": "$650,000",
-      "status": "sale",
-      "area": "1800 sq ft",
-      "location": "Houston, Texas",
-      "facilities": ["Community pool", "Fitness center", "Outdoor patio"],
-      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
-   },
-   {
-      "id": 9,
       "estate_title": "Luxury Vacation Villa with Pool",
       "segment_name": "Vacation rentals",
-      "description": "Luxurious vacation villa with a private pool and stunning views, perfect for a relaxing getaway.",
+      "description": "Escape to paradise with this luxurious vacation villa nestled on the shores of Maui, Hawaii. From the moment you arrive, you'll be captivated by the natural beauty that surrounds you, from the crystal-clear waters of the Pacific Ocean to the verdant landscape that stretches as far as the eye can see. With 3000 square feet of exquisitely appointed living space, this villa offers ample room for relaxation and entertainment. Take a dip in your private pool overlooking the ocean, or whip up a gourmet meal in the state-of-the-art kitchen. With direct access to the beach and a location close to shopping, dining, and entertainment options, this villa is the perfect retreat for those seeking the ultimate Hawaiian getaway.",
       "price": "$500/night",
       "status": "rent",
       "area": "3000 sq ft",
@@ -112,10 +89,10 @@
       "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
    },
    {
-      "id": 10,
+      "id": 8,
       "estate_title": "Seaside Vacation Rental Cottage",
       "segment_name": "Vacation rentals",
-      "description": "Cozy cottage nestled along the coastline, offering breathtaking views and a peaceful retreat.",
+      "description": "Experience coastal living at its finest with this charming seaside cottage nestled along the shores of Cape Cod, Massachusetts. Surrounded by pristine beaches and picturesque scenery, this cozy retreat offers the perfect blend of relaxation and adventure. With 800 square feet of intimate living space, this cottage is ideal for couples seeking a romantic getaway or small families looking to reconnect with nature. Step outside and feel the soft sand between your toes as you take a leisurely stroll along the shoreline, or gather around the fire pit for cozy evenings under the stars. With direct beach access and an outdoor dining area perfect for al fresco meals, this cottage is the epitome of seaside serenity.",
       "price": "$300/night",
       "status": "rent",
       "area": "800 sq ft",
@@ -124,10 +101,10 @@
       "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
    },
    {
-      "id": 11,
+      "id": 9,
       "estate_title": "Mountain Retreat Cabin",
       "segment_name": "Vacation rentals",
-      "description": "Rustic cabin nestled in the mountains, perfect for a secluded getaway and outdoor adventures.",
+      "description": "Escape to the tranquility of the mountains with this rustic cabin nestled in the scenic beauty of Asheville, North Carolina. Surrounded by towering trees and breathtaking views, this cozy retreat offers the perfect sanctuary for those seeking solace in nature. With 1200 square feet of charming living space, this cabin is perfect for couples seeking a romantic getaway or outdoor enthusiasts looking to explore the nearby hiking trails. Step inside and feel the warmth of the wood-burning fireplace as you curl up with a good book, or step outside onto the deck and soak in the panoramic vistas of the mountains beyond. With hiking trails just steps from your door and a deck perfect for stargazing, this cabin is the perfect mountain retreat for those seeking peace and serenity.",
       "price": "$250/night",
       "status": "sale",
       "area": "1200 sq ft",
@@ -136,23 +113,6 @@
          "Wood-burning fireplace",
          "Hiking trails nearby",
          "Deck with mountain views"
-      ],
-      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
-   },
-
-   {
-      "id": 12,
-      "estate_title": "Modern Townhouse with Rooftop Terrace",
-      "segment_name": "Townhouses",
-      "description": "Contemporary townhouse featuring sleek design and a spacious rooftop terrace, perfect for entertaining.",
-      "price": "$900,000",
-      "status": "sale",
-      "area": "2200 sq ft",
-      "location": "San Francisco, California",
-      "facilities": [
-         "Rooftop terrace",
-         "Modern kitchen",
-         "Smart home technology"
       ],
       "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
    }
