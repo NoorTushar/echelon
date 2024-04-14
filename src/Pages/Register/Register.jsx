@@ -4,9 +4,13 @@ import { useState } from "react";
 import { FaEyeSlash, FaRegEye } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+import useAuthContext from "../../Hooks/useAuthContext";
+
 const Register = () => {
    const [showPassword, setShowPassword] = useState(false);
    const [errorMessage, setErrorMessage] = useState(null);
+
+   const test = useAuthContext();
 
    const {
       register,
