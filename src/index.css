@@ -28,6 +28,12 @@ ul li a.active {
    background-color: red;
 }
 
+p,
+li {
+   letter-spacing: 0.25px;
+   font-size: 15px;
+}
+
 input:-webkit-autofill {
    -webkit-box-shadow: 0 0 0 1000px #1e1e1e inset;
    /* Change #000 to your desired background color */

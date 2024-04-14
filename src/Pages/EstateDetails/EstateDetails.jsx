@@ -33,7 +33,7 @@ const EstateDetails = () => {
                alt=""
             />
             {/* information */}
-            <div className="text-center lg:text-start relative w-[85%] md:w-3/4 mx-auto grid gap-8 lg:gap-0 md:grid-cols-2 grid-cols-2 lg:grid-cols-4 border p-8 z-10 bg-[#252525] left-0 right-0 bottom-14">
+            <div className="text-center lg:text-start relative w-[85%] md:w-3/4 mx-auto grid gap-8 lg:gap-0 md:grid-cols-2 grid-cols-2 lg:grid-cols-4 p-8 z-10 bg-[#252525] left-0 right-0 bottom-14">
                {/* 1 */}
                <div className="">
                   <h3 className="font-light text-[15px] tracking-[3px] uppercase mb-1.5">
