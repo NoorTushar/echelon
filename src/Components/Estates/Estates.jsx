@@ -1,8 +1,8 @@
 import { useLoaderData } from "react-router-dom";
 import Estate from "../Estate/Estate";
 
-const Estates = () => {
-   const estates = useLoaderData();
+const Estates = ({ allEstates }) => {
+   const estates = allEstates;
    console.log(estates);
 
    const mappedEstates = estates.map((eachState) => {
