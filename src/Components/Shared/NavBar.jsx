@@ -48,6 +48,11 @@ const NavBar = () => {
          <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1 space-x-4 text-ourAsh text-[15px] font-light tracking-widest uppercase">
                {navItems}
+               {user && (
+                  <li>
+                     <NavLink to={"/updateProfile"}>Update Profile</NavLink>
+                  </li>
+               )}
             </ul>
          </div>
          <div className="navbar-end flex items-center gap-2">

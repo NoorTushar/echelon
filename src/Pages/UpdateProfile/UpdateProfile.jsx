@@ -2,20 +2,17 @@ import { useForm } from "react-hook-form";
 import SectionTitle from "../../Components/Shared/SectionTitle";
 import { useState } from "react";
 import { FaEyeSlash, FaRegEye } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
 
 import useAuthContext from "../../Hooks/useAuthContext";
 import toast from "react-hot-toast";
 import { updateProfile } from "firebase/auth";
 import { Helmet } from "react-helmet-async";
 
-const Register = () => {
+const UpdateProfile = () => {
    const [showPassword, setShowPassword] = useState(false);
    const [errorMessage, setErrorMessage] = useState(null);
 
-   const { createUser, updateUserProfile } = useAuthContext();
-
-   const navigate = useNavigate();
+   const { user } = useAuthContext();
 
    const {
       register,
@@ -31,33 +28,16 @@ const Register = () => {
       const password = getValues("password");
 
       console.log(userName, email, photoURL, password);
-
-      createUser(email, password)
-         .then((result) => {
-            updateUserProfile(userName, photoURL).then(() => {
-               console.log(result.user);
-               toast.success("Registration Successful");
-            });
-         })
-         .catch((error) => {
-            let errorMessage = error.message
-               .split("Firebase: Error (auth/")[1]
-               .split(")")[0]
-               .replace(/-/g, " ");
-
-            toast.error(`Registration Unsuccessful: ${errorMessage}`);
-         });
    };
 
    return (
-      <div className="py-10 min-h-screen">
+      <div>
          <Helmet>
-            <title>Register | Echelon</title>
+            <title>Profile Update | Echelon</title>
          </Helmet>
-
          <SectionTitle
-            upperTitle={"join us"}
-            mainTitle={"register"}
+            upperTitle={"welcome"}
+            mainTitle={"update your profile"}
          ></SectionTitle>
          <div className="w-full max-w-lg space-y-4 mx-auto p-8 bg-ourBlack">
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -178,19 +158,9 @@ const Register = () => {
                   </span>
                </button>
             </form>
-
-            <p className="text-base text-center sm:px-6 text-ourAsh">
-               Already have an account?{"  "}
-               <Link
-                  to={"/login"}
-                  className="underline text-gray-100 font-semibold "
-               >
-                  Login
-               </Link>
-            </p>
          </div>
       </div>
    );
 };
 
-export default Register;
+export default UpdateProfile;
