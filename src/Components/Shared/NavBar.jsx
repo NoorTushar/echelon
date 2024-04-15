@@ -1,6 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
 import LoginButton from "./LoginButton";
+import LogoutButton from "./LogoutButton";
 import { GiHamburgerMenu } from "react-icons/gi";
+import useAuthContext from "../../Hooks/useAuthContext";
 
 const navItems = (
    <>
@@ -17,6 +19,7 @@ const navItems = (
 );
 
 const NavBar = () => {
+   const { user } = useAuthContext();
    return (
       <div className="navbar bg-ourBlack py-4">
          <div className="navbar-start flex items-center">
@@ -47,8 +50,25 @@ const NavBar = () => {
                {navItems}
             </ul>
          </div>
-         <div className="navbar-end">
-            <LoginButton></LoginButton>
+         <div className="navbar-end flex items-center gap-2">
+            {user ? (
+               <>
+                  <div
+                     className="tooltip  tooltip-bottom font-didact"
+                     data-tip={user?.displayName}
+                  >
+                     <img
+                        className="size-11 rounded-full cursor-pointer"
+                        src={user?.photoURL}
+                        alt=""
+                     ></img>
+                  </div>
+
+                  <LogoutButton></LogoutButton>
+               </>
+            ) : (
+               <LoginButton></LoginButton>
+            )}
          </div>
       </div>
    );
