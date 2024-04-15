@@ -21,7 +21,7 @@ const EstateDetails = () => {
       area,
       location,
       facilities,
-      estate_image_small,
+      estate_image_large,
    } = matchedEstate;
    return (
       <section className="max-w-[1170px] mx-auto w-[90%] md:w-[80%]">
@@ -33,7 +33,7 @@ const EstateDetails = () => {
             {/* image */}
             <img
                className="w-full object-cover object-center"
-               src={estate_image_small}
+               src={estate_image_large}
                alt=""
             />
             {/* information */}

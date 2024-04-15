@@ -6,8 +6,7 @@ const Footer = () => {
       <footer
          className="hero"
          style={{
-            backgroundImage:
-               "url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)",
+            backgroundImage: "url(https://i.ibb.co/p3K2WPG/01-large.jpg)",
          }}
       >
          <div className="hero-overlay bg-ourBlack bg-opacity-90"></div>
