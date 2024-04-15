@@ -36,6 +36,11 @@ const NavBar = () => {
                   className="menu menu-sm dropdown-content mt-3 z-[10] p-4 shadow bg-ourBlack text-ourAsh text-[15px] font-light tracking-widest uppercase  w-52 closed-navItems"
                >
                   {navItems}
+                  {user && (
+                     <li>
+                        <NavLink to={"/updateProfile"}>Update Profile</NavLink>
+                     </li>
+                  )}
                </ul>
             </div>
             <Link

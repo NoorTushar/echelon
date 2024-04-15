@@ -7,6 +7,7 @@ import useAuthContext from "../../Hooks/useAuthContext";
 import toast from "react-hot-toast";
 import { updateProfile } from "firebase/auth";
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 
 const UpdateProfile = () => {
    const [showPassword, setShowPassword] = useState(false);
