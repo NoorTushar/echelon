@@ -12,7 +12,6 @@ const Login = () => {
    const [errorMessage, setErrorMessage] = useState(null);
 
    const { loginUser } = useAuthContext();
-   console.log(loginUser);
 
    const navigate = useNavigate();
 
@@ -29,8 +28,6 @@ const Login = () => {
       const email = getValues("email");
       const password = getValues("password");
 
-      console.log(email, password);
-
       // login with username and password
       loginUser(email, password)
          .then((result) => {
@@ -43,7 +40,7 @@ const Login = () => {
                .split(")")[0]
                .replace(/-/g, " ");
 
-            toast.error(errorMessage);
+            toast.error(`Login Unsuccessful: ${errorMessage}`);
          });
    };
 

@@ -44,7 +44,7 @@ const Register = () => {
                .split(")")[0]
                .replace(/-/g, " ");
 
-            toast.error(errorMessage);
+            toast.error(`Registration Unsuccessful: ${errorMessage}`);
          });
    };
 
