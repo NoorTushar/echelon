@@ -12,7 +12,7 @@ const Login = () => {
    const [showPassword, setShowPassword] = useState(false);
    const [errorMessage, setErrorMessage] = useState(null);
 
-   const { loginUser } = useAuthContext();
+   const { loginUser, loginWithGoogle } = useAuthContext();
 
    const navigate = useNavigate();
 
@@ -25,12 +25,30 @@ const Login = () => {
 
    console.log(errors);
 
+   // handle on submit form
    const onSubmit = () => {
       const email = getValues("email");
       const password = getValues("password");
 
       // login with username and password
       loginUser(email, password)
+         .then((result) => {
+            console.log(result.user);
+            toast.success("Login Success");
+         })
+         .catch((error) => {
+            let errorMessage = error.message
+               .split("Firebase: Error (auth/")[1]
+               .split(")")[0]
+               .replace(/-/g, " ");
+
+            toast.error(`Login Unsuccessful: ${errorMessage}`);
+         });
+   };
+
+   // login with google
+   const handleLoginWithGoogle = () => {
+      loginWithGoogle()
          .then((result) => {
             console.log(result.user);
             toast.success("Login Success");
@@ -121,7 +139,10 @@ const Login = () => {
             </div>
             <div className="flex justify-center space-x-4 ">
                {/* Google Login */}
-               <button className="p-3 rounded-sm">
+               <button
+                  onClick={handleLoginWithGoogle}
+                  className="p-3 rounded-sm"
+               >
                   <FaGoogle className="text-xl hover:text-ourGold duration-300"></FaGoogle>
                </button>
                {/* Twitter Login */}

@@ -55,11 +55,13 @@ const NavBar = () => {
                <>
                   <div
                      className="tooltip  tooltip-bottom font-didact"
-                     data-tip={user?.displayName}
+                     data-tip={user?.displayName || "No username set yet"}
                   >
                      <img
-                        className="size-11 rounded-full cursor-pointer"
-                        src={user?.photoURL}
+                        className="size-10 object-cover rounded-full cursor-pointer"
+                        src={
+                           user?.photoURL || "/public/default-profile-pic.png"
+                        }
                         alt=""
                      ></img>
                   </div>
