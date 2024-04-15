@@ -10,17 +10,22 @@ import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 
 const UpdateProfile = () => {
-   const [showPassword, setShowPassword] = useState(false);
    const [errorMessage, setErrorMessage] = useState(null);
 
-   const { user } = useAuthContext();
+   const { user, updateUserProfile } = useAuthContext();
 
    const {
       register,
       handleSubmit,
       getValues,
       formState: { errors },
-   } = useForm();
+   } = useForm({
+      defaultValues: {
+         userName: `${user.displayName}`,
+         email: `${user?.email || "Email hidden"}`,
+         photoURL: `${user.photoURL}`,
+      },
+   });
 
    const onSubmit = () => {
       const userName = getValues("userName");
@@ -29,6 +34,10 @@ const UpdateProfile = () => {
       const password = getValues("password");
 
       console.log(userName, email, photoURL, password);
+
+      updateUserProfile(userName, photoURL).then(() => {
+         toast.success("Profile Updated");
+      });
    };
 
    return (
@@ -44,6 +53,12 @@ const UpdateProfile = () => {
             <form onSubmit={handleSubmit(onSubmit)}>
                {/* Name Field */}
                <div className="mt-4">
+                  <label
+                     htmlFor=""
+                     className="uppercase font-light text-base tracking-[2px]"
+                  >
+                     Your Name
+                  </label>
                   <input
                      {...register("userName", {
                         required: {
@@ -67,14 +82,25 @@ const UpdateProfile = () => {
 
                {/* Email Field */}
                <div className="mt-4">
+                  <label
+                     htmlFor=""
+                     className="uppercase font-light text-base tracking-[2px]"
+                  >
+                     Your email (cant be updated)
+                  </label>
                   <input
                      {...register("email", {
                         required: {
                            value: true,
                            message: "Must provide a valid email address.",
                         },
+                        pattern: {
+                           value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                           message: "Must provide a valid email address",
+                        },
                      })}
                      type="email"
+                     disabled
                      placeholder="Email *"
                      className="w-full p-3 border-b border-gray-700 bg-ourBlack outline-none duration-300 font-didact focus:border-ourGold placeholder:text-ourAsh text-ourAsh"
                   />
@@ -90,6 +116,12 @@ const UpdateProfile = () => {
 
                {/* PhotoURL Field */}
                <div className="mt-4">
+                  <label
+                     htmlFor=""
+                     className="uppercase font-light text-base tracking-[2px]"
+                  >
+                     your photo url
+                  </label>
                   <input
                      {...register("photoURL", {
                         required: {
@@ -111,51 +143,12 @@ const UpdateProfile = () => {
                   )}
                </div>
 
-               {/* Password Field */}
-               <div className="mt-4">
-                  <div className="relative">
-                     <input
-                        {...register("password", {
-                           required: {
-                              value: true,
-                              message: "Must provide a password.",
-                           },
-                           minLength: {
-                              value: 6,
-                              message:
-                                 "Password must be at least of 6 characters",
-                           },
-                           pattern: {
-                              value: /^(?=.*[A-Z])(?=.*[a-z])(?=.*[\d!@#$%^&*()]?).{6,}$/,
-                              message:
-                                 "Must have at least one uppercase letter and one lowercase letter.",
-                           },
-                        })}
-                        type={showPassword ? "text" : "password"}
-                        placeholder="Password *"
-                        className="w-full p-3 border-b border-gray-700 bg-ourBlack outline-none duration-300 font-didact focus:border-ourGold placeholder:text-ourAsh text-ourAsh"
-                     />
-                     <span className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer text-ourAsh">
-                        {showPassword ? (
-                           <FaEyeSlash onClick={() => setShowPassword(false)} />
-                        ) : (
-                           <FaRegEye onClick={() => setShowPassword(true)} />
-                        )}
-                     </span>
-                  </div>
-                  {errors?.password && (
-                     <span className="text-red-500 block mt-1 mb-2 font-didact">
-                        {errors.password.message}
-                     </span>
-                  )}
-               </div>
-
-               {/* login button */}
+               {/* update button */}
 
                <button className="mt-9 w-full px-6 py-3.5 relative group overflow-hidden inline-block border-ourGold bg-ourGold text-white uppercase font-light text-base tracking-[2px] transition-transform duration-300 ease-out transform active:scale-95">
                   <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-300 ease-out transform translate-y-0 bg-ourBlack group-hover:w-full opacity-90"></span>
                   <span className="relative group-hover:text-white">
-                     register
+                     update
                   </span>
                </button>
             </form>

@@ -90,7 +90,11 @@ const Register = () => {
                      {...register("email", {
                         required: {
                            value: true,
-                           message: "Must provide a valid email address.",
+                           message: "Must provide an email",
+                        },
+                        pattern: {
+                           value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                           message: "Must provide a valid email address",
                         },
                      })}
                      type="email"
