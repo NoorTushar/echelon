@@ -3,11 +3,18 @@ import SectionTitle from "../../Components/Shared/SectionTitle";
 import { useState } from "react";
 import { FaGoogle, FaGithub, FaEyeSlash, FaRegEye } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import useAuthContext from "../../Hooks/useAuthContext";
+import toast from "react-hot-toast";
 
 const Login = () => {
    const [showPassword, setShowPassword] = useState(false);
    const [errorMessage, setErrorMessage] = useState(null);
+
+   const { loginUser } = useAuthContext();
+   console.log(loginUser);
+
+   const navigate = useNavigate();
 
    const {
       register,
@@ -25,14 +32,19 @@ const Login = () => {
       console.log(email, password);
 
       // login with username and password
-      //   loginUser(email, password)
-      //      .then((result) => {
-      //         console.log(result.user);
-      //         locationState ? navigate(locationState) : navigate("/");
-      //      })
-      //      .catch((error) => {
-      //         console.error(error);
-      //      });
+      loginUser(email, password)
+         .then((result) => {
+            console.log(result.user);
+            toast.success("Login Success");
+         })
+         .catch((error) => {
+            let errorMessage = error.message
+               .split("Firebase: Error (auth/")[1]
+               .split(")")[0]
+               .replace(/-/g, " ");
+
+            toast.error(errorMessage);
+         });
    };
 
    return (
