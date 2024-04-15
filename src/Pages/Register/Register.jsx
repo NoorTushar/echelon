@@ -49,7 +49,7 @@ const Register = () => {
    };
 
    return (
-      <div className="py-10 min-h-screen">
+      <div className="py-10 min-h-screen max-w-[1170px] mx-auto w-[90%] md:w-[80%]">
          <Helmet>
             <title>Register | Echelon</title>
          </Helmet>
@@ -58,7 +58,7 @@ const Register = () => {
             upperTitle={"join us"}
             mainTitle={"register"}
          ></SectionTitle>
-         <div className="w-full max-w-lg space-y-4 mx-auto p-8 bg-ourBlack">
+         <div className="w-full max-w-lg space-y-4 mx-auto px-4 py-8 bg-ourBlack">
             <form onSubmit={handleSubmit(onSubmit)}>
                {/* Name Field */}
                <div className="mt-4">

@@ -2,7 +2,7 @@ import SectionTitle from "../Shared/SectionTitle";
 
 const About = () => {
    return (
-      <div>
+      <div className="max-w-[1170px] mx-auto w-[90%] md:w-[80%]">
          <SectionTitle
             upperTitle={"get to know us"}
             mainTitle={"about company"}

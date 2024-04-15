@@ -10,8 +10,8 @@ const Estates = ({ allEstates }) => {
    });
 
    return (
-      <div>
-         <div className="grid lg:grid-cols-3 gap-6">{mappedEstates}</div>
+      <div className="max-w-[1170px] mx-auto w-[90%] md:w-[80%]">
+         <div className="grid lg:grid-cols-2 gap-6">{mappedEstates}</div>
       </div>
    );
 };
