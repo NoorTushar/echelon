@@ -15,7 +15,8 @@ const Login = () => {
    const { loginUser, loginWithGoogle, loginWithGitHub } = useAuthContext();
 
    const location = useLocation();
-   console.log(location);
+   const locationState = location.state;
+
    const navigate = useNavigate();
 
    const {
@@ -179,6 +180,7 @@ const Login = () => {
             <p className="text-base text-center sm:px-6 text-ourAsh">
                Do not have an account?{"  "}
                <Link
+                  state={locationState}
                   to={"/register"}
                   className="underline text-gray-100 font-semibold "
                >

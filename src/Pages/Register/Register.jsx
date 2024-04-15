@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import SectionTitle from "../../Components/Shared/SectionTitle";
 import { useState } from "react";
 import { FaEyeSlash, FaRegEye } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import useAuthContext from "../../Hooks/useAuthContext";
 import toast from "react-hot-toast";
@@ -13,9 +13,11 @@ const Register = () => {
    const [showPassword, setShowPassword] = useState(false);
    const [errorMessage, setErrorMessage] = useState(null);
 
-   const { createUser, updateUserProfile } = useAuthContext();
+   const { createUser, updateUserProfile, setLoading } = useAuthContext();
 
    const navigate = useNavigate();
+   const location = useLocation();
+   console.log(location);
 
    const {
       register,
@@ -35,7 +37,9 @@ const Register = () => {
       createUser(email, password)
          .then((result) => {
             updateUserProfile(userName, photoURL).then(() => {
+               setLoading(false);
                toast.success("Registration Successful");
+               navigate(location?.state || "/");
             });
          })
          .catch((error) => {
