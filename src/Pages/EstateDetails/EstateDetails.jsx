@@ -1,6 +1,7 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { MdDone } from "react-icons/md";
+import { Helmet } from "react-helmet-async";
 
 const EstateDetails = () => {
    const allEstates = useLoaderData();
@@ -24,6 +25,9 @@ const EstateDetails = () => {
    } = matchedEstate;
    return (
       <section className="max-w-[1170px] mx-auto w-[90%] md:w-[80%]">
+         <Helmet>
+            <title>{estate_title}</title>
+         </Helmet>
          {/* top */}
          <div className="w-full relative">
             {/* image */}

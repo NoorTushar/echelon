@@ -6,6 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { Link, useNavigate } from "react-router-dom";
 import useAuthContext from "../../Hooks/useAuthContext";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
    const [showPassword, setShowPassword] = useState(false);
@@ -46,6 +47,9 @@ const Login = () => {
 
    return (
       <div className="py-10 min-h-screen">
+         <Helmet>
+            <title>Login | Echelon</title>
+         </Helmet>
          <SectionTitle
             upperTitle={"account"}
             mainTitle={"login"}

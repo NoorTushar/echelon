@@ -7,6 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 import useAuthContext from "../../Hooks/useAuthContext";
 import toast from "react-hot-toast";
 import { updateProfile } from "firebase/auth";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
    const [showPassword, setShowPassword] = useState(false);
@@ -50,9 +51,10 @@ const Register = () => {
 
    return (
       <div className="py-10 min-h-screen">
-         <button onClick={() => toast.success("Registration Successful")}>
-            TOAST MESSAGE
-         </button>
+         <Helmet>
+            <title>Register | Echelon</title>
+         </Helmet>
+
          <SectionTitle
             upperTitle={"join us"}
             mainTitle={"register"}
