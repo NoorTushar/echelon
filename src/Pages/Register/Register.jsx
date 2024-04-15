@@ -6,12 +6,13 @@ import { Link, useNavigate } from "react-router-dom";
 
 import useAuthContext from "../../Hooks/useAuthContext";
 import toast from "react-hot-toast";
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
    const [showPassword, setShowPassword] = useState(false);
    const [errorMessage, setErrorMessage] = useState(null);
 
-   const { createUser } = useAuthContext();
+   const { createUser, updateUserProfile } = useAuthContext();
 
    const navigate = useNavigate();
 
@@ -32,7 +33,10 @@ const Register = () => {
 
       createUser(email, password)
          .then((result) => {
-            toast.success("Registration Successful");
+            updateUserProfile(userName, photoURL).then(() => {
+               console.log(result.user);
+               toast.success("Registration Successful");
+            });
          })
          .catch((error) => {
             let errorMessage = error.message
