@@ -35,7 +35,6 @@ const Register = () => {
       createUser(email, password)
          .then((result) => {
             updateUserProfile(userName, photoURL).then(() => {
-               console.log(result.user);
                toast.success("Registration Successful");
             });
          })

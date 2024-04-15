@@ -12,7 +12,7 @@ import { useLocation } from "react-router-dom";
 const UpdateProfile = () => {
    const [errorMessage, setErrorMessage] = useState(null);
 
-   const { user, updateUserProfile } = useAuthContext();
+   const { user, updateUserProfile, setLoading } = useAuthContext();
 
    const {
       register,
@@ -36,6 +36,7 @@ const UpdateProfile = () => {
       console.log(userName, email, photoURL, password);
 
       updateUserProfile(userName, photoURL).then(() => {
+         setLoading(false);
          toast.success("Profile Updated");
       });
    };
