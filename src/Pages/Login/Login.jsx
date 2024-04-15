@@ -12,7 +12,7 @@ const Login = () => {
    const [showPassword, setShowPassword] = useState(false);
    const [errorMessage, setErrorMessage] = useState(null);
 
-   const { loginUser, loginWithGoogle } = useAuthContext();
+   const { loginUser, loginWithGoogle, loginWithGitHub } = useAuthContext();
 
    const navigate = useNavigate();
 
@@ -49,6 +49,23 @@ const Login = () => {
    // login with google
    const handleLoginWithGoogle = () => {
       loginWithGoogle()
+         .then((result) => {
+            console.log(result.user);
+            toast.success("Login Success");
+         })
+         .catch((error) => {
+            let errorMessage = error.message
+               .split("Firebase: Error (auth/")[1]
+               .split(")")[0]
+               .replace(/-/g, " ");
+
+            toast.error(`Login Unsuccessful: ${errorMessage}`);
+         });
+   };
+
+   // login with gitHub
+   const handleLoginWithGitHub = () => {
+      loginWithGitHub()
          .then((result) => {
             console.log(result.user);
             toast.success("Login Success");
@@ -150,7 +167,10 @@ const Login = () => {
                   <FaXTwitter className="text-xl hover:text-ourGold duration-300"></FaXTwitter>
                </button>
                {/* GitHub login */}
-               <button className="p-3 rounded-sm">
+               <button
+                  onClick={handleLoginWithGitHub}
+                  className="p-3 rounded-sm"
+               >
                   <FaGithub className="text-2xl hover:text-ourGold duration-300"></FaGithub>
                </button>
             </div>
