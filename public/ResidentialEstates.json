@@ -9,7 +9,8 @@
       "area": "5000 sq ft",
       "location": "Malibu, California",
       "facilities": ["Infinity pool", "Spa", "Gourmet kitchen"],
-      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+      "estate_image_small": "https://i.ibb.co/8B4gk9N/01-medium.jpg",
+      "estate_image_large": "https://i.ibb.co/p3K2WPG/01-large.jpg"
    },
    {
       "id": 2,
@@ -21,7 +22,8 @@
       "area": "3500 sq ft",
       "location": "Seattle, Washington",
       "facilities": ["Spacious backyard", "Modern kitchen", "Home office"],
-      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+      "estate_image_small": "https://i.ibb.co/NjbWGXt/02-medium.jpg",
+      "estate_image_large": "https://i.ibb.co/MD18Tpt/02-large.jpg"
    },
    {
       "id": 3,
@@ -33,7 +35,8 @@
       "area": "2200 sq ft",
       "location": "Denver, Colorado",
       "facilities": ["Attached garage", "Community pool", "Patio"],
-      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+      "estate_image_small": "https://i.ibb.co/QbGcYY5/03-medium.jpg",
+      "estate_image_large": "https://i.ibb.co/yRMSYNZ/03-large.jpg"
    },
    {
       "id": 4,
@@ -45,7 +48,8 @@
       "area": "1500 sq ft",
       "location": "New York City, New York",
       "facilities": ["Fitness center", "Rooftop terrace", "Concierge service"],
-      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+      "estate_image_small": "https://i.ibb.co/sQJZTgH/04-medium.jpg",
+      "estate_image_large": "https://i.ibb.co/ct7RZVG/04-large.jpg"
    },
    {
       "id": 5,
@@ -61,7 +65,8 @@
          "Exposed brick walls",
          "Private balcony"
       ],
-      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+      "estate_image_small": "https://i.ibb.co/R3wGxbx/05-medium.jpg",
+      "estate_image_large": "https://i.ibb.co/HtFFSNq/05-large.jpg"
    },
    {
       "id": 6,
@@ -73,7 +78,8 @@
       "area": "1000 sq ft",
       "location": "Miami, Florida",
       "facilities": ["Private balcony", "Beach access", "Fitness center"],
-      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+      "estate_image_small": "https://i.ibb.co/0KG5Rmn/06-medium.jpg",
+      "estate_image_large": "https://i.ibb.co/fHxBg3g/06-large.jpg"
    },
 
    {
@@ -86,7 +92,8 @@
       "area": "3000 sq ft",
       "location": "Maui, Hawaii",
       "facilities": ["Private pool", "Oceanfront location", "Gourmet kitchen"],
-      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+      "estate_image_small": "https://i.ibb.co/hcN9Pk6/07-medium.jpg",
+      "estate_image_large": "https://i.ibb.co/qsfccr9/07-large.jpg"
    },
    {
       "id": 8,
@@ -98,7 +105,8 @@
       "area": "800 sq ft",
       "location": "Cape Cod, Massachusetts",
       "facilities": ["Direct beach access", "Outdoor dining area", "Fire pit"],
-      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+      "estate_image_small": "https://i.ibb.co/RQSzs9Z/08-medium.jpg",
+      "estate_image_large": "https://i.ibb.co/dkDcfD5/08-large.jpg"
    },
    {
       "id": 9,
@@ -114,6 +122,7 @@
          "Hiking trails nearby",
          "Deck with mountain views"
       ],
-      "estate_image_small": "https://i.ibb.co/HNkBCyy/01-small.jpg"
+      "estate_image_small": "https://i.ibb.co/XVT3ZdS/09-medium.jpg",
+      "estate_image_large": "https://i.ibb.co/XygQCPP/09-large.jpg"
    }
 ]
