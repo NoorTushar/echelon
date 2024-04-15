@@ -2,15 +2,18 @@ import { useForm } from "react-hook-form";
 import SectionTitle from "../../Components/Shared/SectionTitle";
 import { useState } from "react";
 import { FaEyeSlash, FaRegEye } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import useAuthContext from "../../Hooks/useAuthContext";
+import toast from "react-hot-toast";
 
 const Register = () => {
    const [showPassword, setShowPassword] = useState(false);
    const [errorMessage, setErrorMessage] = useState(null);
 
    const { createUser } = useAuthContext();
+
+   const navigate = useNavigate();
 
    const {
       register,
@@ -29,15 +32,23 @@ const Register = () => {
 
       createUser(email, password)
          .then((result) => {
-            console.log(result.user);
+            toast.success("Registration Successful");
          })
          .catch((error) => {
-            console.error(error);
+            let errorMessage = error.message
+               .split("Firebase: Error (auth/")[1]
+               .split(")")[0]
+               .replace(/-/g, " ");
+
+            toast.error(errorMessage);
          });
    };
 
    return (
       <div className="py-10 min-h-screen">
+         <button onClick={() => toast.success("Registration Successful")}>
+            TOAST MESSAGE
+         </button>
          <SectionTitle
             upperTitle={"join us"}
             mainTitle={"register"}
