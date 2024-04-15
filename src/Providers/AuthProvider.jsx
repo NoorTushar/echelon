@@ -17,6 +17,7 @@ const gitHubProvider = new GithubAuthProvider();
 
 const AuthProvider = ({ children }) => {
    const [user, setUser] = useState(null);
+   const [loading, setLoading] = useState(true);
 
    // create user
    const createUser = (email, password) => {
@@ -25,11 +26,13 @@ const AuthProvider = ({ children }) => {
 
    // login user
    const loginUser = (email, password) => {
+      setLoading(true);
       return signInWithEmailAndPassword(auth, email, password);
    };
 
    // update user profile
    const updateUserProfile = (userName, userPhoto) => {
+      setLoading(true);
       return updateProfile(auth.currentUser, {
          displayName: userName,
          photoURL: userPhoto,
@@ -43,26 +46,31 @@ const AuthProvider = ({ children }) => {
 
    // google login
    const loginWithGoogle = () => {
+      setLoading(true);
       return signInWithPopup(auth, googleProvider);
    };
 
    // gitHub login
    const loginWithGitHub = () => {
+      setLoading(true);
       return signInWithPopup(auth, gitHubProvider);
    };
 
-   // authChange observer
+   // observe user
    useEffect(() => {
-      const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-         console.log(`observing the user: ${currentUser?.email}`);
+      const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
+         console.log("Current value of the current user", currentUser);
          setUser(currentUser);
+         setLoading(false);
       });
-
-      return () => unsubscribe();
+      return () => {
+         unSubscribe();
+      };
    }, []);
 
    const allValues = {
       user,
+      loading,
       createUser,
       updateUserProfile,
       loginUser,

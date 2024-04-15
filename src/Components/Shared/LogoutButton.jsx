@@ -10,7 +10,6 @@ const LogoutButton = () => {
       e.preventDefault();
       logOutUser()
          .then(() => {
-            console.log("Logged Out Successfully");
             toast.success("logged out");
          })
          .catch((error) => console.error(error));

@@ -64,7 +64,7 @@ const NavBar = () => {
             {user ? (
                <>
                   <div
-                     className="tooltip  tooltip-bottom font-didact"
+                     className="tooltip  z-50  tooltip-bottom font-didact"
                      data-tip={user?.displayName || "No username set yet"}
                   >
                      <img
