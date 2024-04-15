@@ -167,10 +167,7 @@ const Login = () => {
                >
                   <FaGoogle className="text-xl hover:text-ourGold duration-300"></FaGoogle>
                </button>
-               {/* Twitter Login */}
-               <button className="p-3 rounded-sm">
-                  <FaXTwitter className="text-xl hover:text-ourGold duration-300"></FaXTwitter>
-               </button>
+
                {/* GitHub login */}
                <button
                   onClick={handleLoginWithGitHub}
