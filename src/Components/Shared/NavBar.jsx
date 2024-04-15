@@ -60,7 +60,7 @@ const NavBar = () => {
                )}
             </ul>
          </div>
-         <div className="navbar-end flex items-center gap-2">
+         <div className="navbar-end flex items-center gap-2.5">
             {user ? (
                <>
                   <div
@@ -68,7 +68,7 @@ const NavBar = () => {
                      data-tip={user?.displayName || "No username set yet"}
                   >
                      <img
-                        className="size-10 object-cover rounded-full cursor-pointer"
+                        className="size-8 md:size-10 object-cover rounded-full cursor-pointer"
                         src={
                            user?.photoURL || "/public/default-profile-pic.png"
                         }
