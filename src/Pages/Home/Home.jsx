@@ -4,6 +4,7 @@ import Banner from "../../Components/Banner/Banner";
 import Estates from "../../Components/Estates/Estates";
 import { useLoaderData } from "react-router-dom";
 import OurService from "../../Components/OurService/OurService";
+import Testimonials from "../../Components/Testimonial/Testimonials";
 
 const Home = () => {
    const allEstates = useLoaderData();
@@ -16,6 +17,7 @@ const Home = () => {
          <About></About>
          <Estates allEstates={allEstates}></Estates>
          <OurService></OurService>
+         <Testimonials></Testimonials>
       </div>
    );
 };
