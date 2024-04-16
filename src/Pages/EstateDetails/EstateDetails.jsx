@@ -24,6 +24,8 @@ const EstateDetails = () => {
       location,
       facilities,
       estate_image_large,
+      Latitude,
+      Longitude,
    } = matchedEstate;
    return (
       <section className="max-w-[1170px] mx-auto w-[90%] md:w-[80%]">
@@ -102,16 +104,16 @@ const EstateDetails = () => {
          </div>
 
          <MapContainer
-            center={[51.505, -0.09]}
+            center={[Latitude, Longitude]}
             zoom={13}
             scrollWheelZoom={false}
-            className="h-96"
+            className="h-[500px]"
          >
             <TileLayer
                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker position={[51.505, -0.09]}>
+            <Marker position={[Latitude, Longitude]}>
                <Popup>
                   A pretty CSS3 popup. <br /> Easily customizable.
                </Popup>

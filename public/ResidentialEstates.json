@@ -10,7 +10,9 @@
       "location": "Malibu, California",
       "facilities": ["Infinity pool", "Spa", "Gourmet kitchen"],
       "estate_image_small": "https://i.ibb.co/8B4gk9N/01-medium.jpg",
-      "estate_image_large": "https://i.ibb.co/p3K2WPG/01-large.jpg"
+      "estate_image_large": "https://i.ibb.co/p3K2WPG/01-large.jpg",
+      "Latitude": 34.0259,
+      "Longitude": -118.7798
    },
    {
       "id": 2,
@@ -23,7 +25,9 @@
       "location": "Seattle, Washington",
       "facilities": ["Spacious backyard", "Modern kitchen", "Home office"],
       "estate_image_small": "https://i.ibb.co/NjbWGXt/02-medium.jpg",
-      "estate_image_large": "https://i.ibb.co/MD18Tpt/02-large.jpg"
+      "estate_image_large": "https://i.ibb.co/MD18Tpt/02-large.jpg",
+      "Latitude": 47.6062,
+      "Longitude": -122.3321
    },
    {
       "id": 3,
@@ -36,7 +40,9 @@
       "location": "Denver, Colorado",
       "facilities": ["Attached garage", "Community pool", "Patio"],
       "estate_image_small": "https://i.ibb.co/QbGcYY5/03-medium.jpg",
-      "estate_image_large": "https://i.ibb.co/yRMSYNZ/03-large.jpg"
+      "estate_image_large": "https://i.ibb.co/yRMSYNZ/03-large.jpg",
+      "Latitude": 39.7392,
+      "Longitude": -104.9903
    },
    {
       "id": 4,
@@ -49,7 +55,9 @@
       "location": "New York City, New York",
       "facilities": ["Fitness center", "Rooftop terrace", "Concierge service"],
       "estate_image_small": "https://i.ibb.co/sQJZTgH/04-medium.jpg",
-      "estate_image_large": "https://i.ibb.co/ct7RZVG/04-large.jpg"
+      "estate_image_large": "https://i.ibb.co/ct7RZVG/04-large.jpg",
+      "Latitude": 40.7128,
+      "Longitude": -74.006
    },
    {
       "id": 5,
@@ -66,7 +74,9 @@
          "Private balcony"
       ],
       "estate_image_small": "https://i.ibb.co/R3wGxbx/05-medium.jpg",
-      "estate_image_large": "https://i.ibb.co/HtFFSNq/05-large.jpg"
+      "estate_image_large": "https://i.ibb.co/HtFFSNq/05-large.jpg",
+      "Latitude": 34.0522,
+      "Longitude": -118.2437
    },
    {
       "id": 6,
@@ -79,7 +89,9 @@
       "location": "Miami, Florida",
       "facilities": ["Private balcony", "Beach access", "Fitness center"],
       "estate_image_small": "https://i.ibb.co/0KG5Rmn/06-medium.jpg",
-      "estate_image_large": "https://i.ibb.co/fHxBg3g/06-large.jpg"
+      "estate_image_large": "https://i.ibb.co/fHxBg3g/06-large.jpg",
+      "Latitude": 25.7617,
+      "Longitude": -80.1918
    },
 
    {
@@ -93,7 +105,9 @@
       "location": "Maui, Hawaii",
       "facilities": ["Private pool", "Oceanfront location", "Gourmet kitchen"],
       "estate_image_small": "https://i.ibb.co/hcN9Pk6/07-medium.jpg",
-      "estate_image_large": "https://i.ibb.co/qsfccr9/07-large.jpg"
+      "estate_image_large": "https://i.ibb.co/qsfccr9/07-large.jpg",
+      "Latitude": 20.7984,
+      "Longitude": -156.3319
    },
    {
       "id": 8,
@@ -106,7 +120,9 @@
       "location": "Cape Cod, Massachusetts",
       "facilities": ["Direct beach access", "Outdoor dining area", "Fire pit"],
       "estate_image_small": "https://i.ibb.co/RQSzs9Z/08-medium.jpg",
-      "estate_image_large": "https://i.ibb.co/dkDcfD5/08-large.jpg"
+      "estate_image_large": "https://i.ibb.co/dkDcfD5/08-large.jpg",
+      "Latitude": 41.6688,
+      "Longitude": -70.2962
    },
    {
       "id": 9,
@@ -123,6 +139,8 @@
          "Deck with mountain views"
       ],
       "estate_image_small": "https://i.ibb.co/XVT3ZdS/09-medium.jpg",
-      "estate_image_large": "https://i.ibb.co/XygQCPP/09-large.jpg"
+      "estate_image_large": "https://i.ibb.co/XygQCPP/09-large.jpg",
+      "Latitude": 35.5951,
+      "Longitude": -82.5515
    }
 ]
