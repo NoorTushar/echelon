@@ -1,0 +1,32 @@
+[
+   {
+      "service_id": 1,
+      "service_title": "Quick services",
+      "service_description": "Our team ensures swift responses and efficient transactions, prioritizing your needs every step of the way."
+   },
+   {
+      "service_id": 2,
+      "service_title": "Expert team",
+      "service_description": "Backed by seasoned professionals, we offer expert guidance and support, ensuring informed decisions and seamless experiences for our clients."
+   },
+   {
+      "service_id": 3,
+      "service_title": "Luxurious properties",
+      "service_description": "Step into a world of elegance and comfort with our meticulously designed residences, where luxury meets functionality to create your perfect living space."
+   },
+   {
+      "service_id": 4,
+      "service_title": "EMI facility",
+      "service_description": "Owning your dream home has never been easier with our flexible EMI options, providing you with the financial freedom to make your aspirations a reality without added stress."
+   },
+   {
+      "service_id": 5,
+      "service_title": "Modern fittings",
+      "service_description": "Embrace the essence of contemporary living with our state-of-the-art fittings and fixtures, curated to enhance your lifestyle and elevate your everyday experiences."
+   },
+   {
+      "service_id": 6,
+      "service_title": "Awesome location",
+      "service_description": "Discover the ideal balance of convenience and tranquility with our prime locations, offering easy access to urban amenities and scenic surroundings, making every moment spent in your new home truly remarkable."
+   }
+]
