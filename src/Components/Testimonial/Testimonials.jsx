@@ -13,11 +13,11 @@ const Testimonials = () => {
                   alt=""
                   className="w-20 h-20 rounded-full "
                />
-               <blockquote className="max-w-lg text-lg italic font-medium text-center">
+               <blockquote className="max-w-lg text-lg font-didact italic font-medium text-center">
                   "Et, dignissimos obcaecati. Recusandae praesentium doloribus
                   vitae? Rem unde atque mollitia!"
                </blockquote>
-               <div className="text-center ">
+               <div className="text-center text-ourAsh">
                   <p>Leroy Jenkins</p>
                   <p>CEO of Company Co.</p>
                </div>
