@@ -3,7 +3,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaHome } from "react-icons/fa";
 import { MdDone } from "react-icons/md";
 
-const Estate = ({ eachState }) => {
+const Estate = ({ eachState, animation, duration }) => {
    const {
       id,
       estate_title,

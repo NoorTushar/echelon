@@ -5,8 +5,15 @@ const Estates = ({ allEstates }) => {
    const estates = allEstates;
    console.log(estates);
 
-   const mappedEstates = estates.map((eachState) => {
-      return <Estate key={eachState.id} eachState={eachState}></Estate>;
+   const mappedEstates = estates.map((eachState, index) => {
+      return (
+         <Estate
+            animation={index % 2 === 0 ? "fade-right" : "fade-left"}
+            duration="1000"
+            key={eachState.id}
+            eachState={eachState}
+         ></Estate>
+      );
    });
 
    return (

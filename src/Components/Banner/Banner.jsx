@@ -30,14 +30,33 @@ const Banner = ({ allEstates }) => {
                <div className="hero-overlay bg-ourBlack bg-opacity-20"></div>
                <div className="hero-content text-center ">
                   <div className="max-w-xl">
-                     <p className="mb-4 text-sm font-light uppercase tracking-[15px] font-oswald">
+                     <p
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="50"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        className="mb-4 text-sm font-light uppercase tracking-[15px] font-oswald"
+                     >
                         {states[0].segment_name}
                      </p>
-                     <h1 className="mb-5 text-[60px] font-semibold tracking-[3px] uppercase leading-[75px]">
+                     <h1
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="150"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
+                        className="mb-5 text-[60px] font-semibold tracking-[3px] uppercase leading-[75px]"
+                     >
                         {states[0].estate_title}
                      </h1>
 
                      <Link
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="250"
+                        data-aos-duration="700"
+                        data-aos-easing="ease-in-out"
                         to={`/details/${states[0].id}`}
                         className="px-6 py-3.5 relative group overflow-hidden inline-block border-ourGold bg-ourGold text-white uppercase font-light text-base tracking-[2px] transition-transform duration-300 ease-out transform active:scale-95"
                      >

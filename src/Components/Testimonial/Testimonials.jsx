@@ -2,8 +2,21 @@ const Testimonials = () => {
    return (
       <section className="max-w-[1170px] mx-auto w-[90%] md:w-[80%] my-[60px] md:my-[100px]">
          <div className="section-heading">
-            <h5>what our clients say</h5>
-            <h2>Testimonials</h2>
+            <h5
+               data-aos="fade-up"
+               data-aos-duration="700"
+               data-aos-easing="ease-in-out"
+            >
+               what our clients say
+            </h5>
+            <h2
+               data-aos="fade-up"
+               data-aos-duration="700"
+               data-aos-delay="100"
+               data-aos-easing="ease-in-out"
+            >
+               Testimonials
+            </h2>
          </div>
 
          <div className="container max-w-xl mx-auto">
