@@ -12,14 +12,32 @@ const OurService = () => {
    return (
       <section className="max-w-[1170px] mx-auto w-[90%] md:w-[80%]">
          <div className="section-heading">
-            <h5>why choose us</h5>
-            <h2>our services</h2>
+            <h5
+               data-aos="fade-up"
+               data-aos-duration="700"
+               data-aos-easing="ease-in-out"
+            >
+               why choose us
+            </h5>
+            <h2
+               data-aos="fade-up"
+               data-aos-duration="700"
+               data-aos-delay="100"
+               data-aos-easing="ease-in-out"
+            >
+               our services
+            </h2>
          </div>
 
          {/* card container */}
          <div className="grid md:grid-cols-2 lg:grid-cols-3 *:border *:border-ourGold">
             {/* each card */}
-            <div className="service-card">
+            <div
+               className="service-card"
+               data-aos="fade-up"
+               data-aos-duration="700"
+               data-aos-easing="ease-in-out"
+            >
                <BsLightningCharge className="service-logo" />
                <h3 className="service-title">Quick services</h3>
                <p className="service-description">
@@ -29,7 +47,13 @@ const OurService = () => {
             </div>
 
             {/* each card */}
-            <div className="service-card">
+            <div
+               className="service-card"
+               data-aos="fade-up"
+               data-aos-duration="700"
+               data-aos-delay="100"
+               data-aos-easing="ease-in-out"
+            >
                <IoPeopleOutline className="service-logo" />
                <h3 className="service-title">Expert team</h3>
                <p className="service-description">
@@ -40,7 +64,13 @@ const OurService = () => {
             </div>
 
             {/* each card */}
-            <div className="service-card">
+            <div
+               className="service-card"
+               data-aos="fade-up"
+               data-aos-duration="700"
+               data-aos-delay="200"
+               data-aos-easing="ease-in-out"
+            >
                <RiBuilding2Line className="service-logo" />
                <h3 className="service-title">Luxurious properties</h3>
                <p className="service-description">
@@ -51,7 +81,13 @@ const OurService = () => {
             </div>
 
             {/* each card */}
-            <div className="service-card">
+            <div
+               className="service-card"
+               data-aos="fade-up"
+               data-aos-duration="700"
+               data-aos-delay="400"
+               data-aos-easing="ease-in-out"
+            >
                <GrMoney className="service-logo" />
                <h3 className="service-title">EMI facility</h3>
                <p className="service-description">
@@ -62,7 +98,13 @@ const OurService = () => {
             </div>
 
             {/* each card */}
-            <div className="service-card">
+            <div
+               className="service-card"
+               data-aos="fade-up"
+               data-aos-duration="700"
+               data-aos-delay="500"
+               data-aos-easing="ease-in-out"
+            >
                <MdOutlineDesk className="service-logo" />
                <h3 className="service-title">Modern fittings</h3>
                <p className="service-description">
@@ -73,7 +115,13 @@ const OurService = () => {
             </div>
 
             {/* each card */}
-            <div className="service-card">
+            <div
+               className="service-card"
+               data-aos="fade-up"
+               data-aos-duration="700"
+               data-aos-delay="600"
+               data-aos-easing="ease-in-out"
+            >
                <GrMapLocation className="service-logo" />
                <h3 className="service-title">Awesome location</h3>
                <p className="service-description">
