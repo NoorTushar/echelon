@@ -9,8 +9,7 @@ import AuthProvider from "./Providers/AuthProvider";
 import { Toaster } from "react-hot-toast";
 import { HelmetProvider } from "react-helmet-async";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
+import "aos/dist/aos.css";
 AOS.init();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
