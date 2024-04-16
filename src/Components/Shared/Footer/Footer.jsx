@@ -9,9 +9,9 @@ const Footer = () => {
             backgroundImage: "url(https://i.ibb.co/p3K2WPG/01-large.jpg)",
          }}
       >
-         <div className="hero-overlay bg-ourBlack bg-opacity-90"></div>
+         <div className="hero-overlay bg-ourBlack bg-opacity-90 h-full"></div>
 
-         <div className="py-10 w-full">
+         <div className=" w-full  py-[60px] md:py-[100px]">
             <div className=" text-center font-light space-y-1 mb-20">
                <h3 className="tracking-[5px] text-lg mb-2">CONTACT INFO</h3>
                <p className="text-[15px] ">+88 0168 302 1094</p>
