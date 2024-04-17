@@ -42,7 +42,7 @@ const UpdateProfile = () => {
    };
 
    return (
-      <section className="max-w-[1170px] mx-auto w-[90%] md:w-[80%] mt-[20px] md:mt-[30px] mb-[60px] md:mb-[100px]">
+      <section className="max-w-[1170px] min-h-[calc(100vh-84px)] mx-auto w-[90%] md:w-[80%] mt-[20px] md:mt-[30px] mb-[60px] md:mb-[100px]">
          <Helmet>
             <title>Update Profile | Echelon</title>
          </Helmet>
@@ -50,8 +50,8 @@ const UpdateProfile = () => {
          {/* section title */}
          <div className="section-heading">
             <h5
-               data-aos="fade-right"
-               data-aos-delay="150"
+               data-aos="fade-up"
+               data-aos-delay="100"
                data-aos-duration="700"
                data-aos-easing="ease-in-out"
                className="text-sm font-light tracking-[5px] uppercase"
@@ -64,7 +64,7 @@ const UpdateProfile = () => {
             <h2
                data-aos="fade-up"
                data-aos-duration="700"
-               data-aos-delay="100"
+               data-aos-delay="150"
                data-aos-easing="ease-in-out"
                className="tracking-[5px] text-[45px] mb-5 uppercase"
             >

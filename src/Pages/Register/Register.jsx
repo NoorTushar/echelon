@@ -53,19 +53,42 @@ const Register = () => {
    };
 
    return (
-      <div className="py-10 min-h-screen max-w-[1170px] mx-auto w-[90%] md:w-[80%]">
+      <section className="py-10 pb-0 min-h-[calc(100vh-84px)] max-w-[1170px] mx-auto w-[90%] md:w-[80%]">
          <Helmet>
             <title>Register | Echelon</title>
          </Helmet>
 
-         <SectionTitle
-            upperTitle={"join us"}
-            mainTitle={"register"}
-         ></SectionTitle>
-         <div className="w-full max-w-lg space-y-4 mx-auto px-4 py-8 bg-ourBlack">
+         {/* section title */}
+         <div className="section-heading">
+            <h5
+               data-aos="fade-right"
+               data-aos-delay="150"
+               data-aos-duration="700"
+               data-aos-easing="ease-in-out"
+               className="text-sm font-light tracking-[5px] uppercase"
+            >
+               join us
+            </h5>
+            <h2
+               data-aos="fade-up"
+               data-aos-duration="700"
+               data-aos-delay="200"
+               data-aos-easing="ease-in-out"
+               className="tracking-[5px] text-[45px] mb-5 uppercase"
+            >
+               register
+            </h2>
+         </div>
+         <div className="w-full max-w-lg space-y-4 mx-auto px-4  bg-ourBlack">
             <form onSubmit={handleSubmit(onSubmit)}>
                {/* Name Field */}
-               <div className="mt-4">
+               <div
+                  data-aos="fade-right"
+                  data-aos-delay="150"
+                  data-aos-duration="700"
+                  data-aos-easing="ease-in-out"
+                  className="mt-4"
+               >
                   <input
                      {...register("userName", {
                         required: {
@@ -88,7 +111,13 @@ const Register = () => {
                </div>
 
                {/* Email Field */}
-               <div className="mt-4">
+               <div
+                  data-aos="fade-right"
+                  data-aos-delay="250"
+                  data-aos-duration="700"
+                  data-aos-easing="ease-in-out"
+                  className="mt-4"
+               >
                   <input
                      {...register("email", {
                         required: {
@@ -115,7 +144,13 @@ const Register = () => {
                </div>
 
                {/* PhotoURL Field */}
-               <div className="mt-4">
+               <div
+                  data-aos="fade-right"
+                  data-aos-delay="350"
+                  data-aos-duration="700"
+                  data-aos-easing="ease-in-out"
+                  className="mt-4"
+               >
                   <input
                      {...register("photoURL", {
                         required: {
@@ -138,7 +173,13 @@ const Register = () => {
                </div>
 
                {/* Password Field */}
-               <div className="mt-4">
+               <div
+                  data-aos="fade-right"
+                  data-aos-delay="450"
+                  data-aos-duration="700"
+                  data-aos-easing="ease-in-out"
+                  className="mt-4"
+               >
                   <div className="relative">
                      <input
                         {...register("password", {
@@ -178,7 +219,13 @@ const Register = () => {
 
                {/* login button */}
 
-               <button className="mt-9 w-full px-6 py-3.5 relative group overflow-hidden inline-block border-ourGold bg-ourGold text-white uppercase font-light text-base tracking-[2px] transition-transform duration-300 ease-out transform active:scale-95">
+               <button
+                  data-aos="zoom-in"
+                  data-aos-delay="250"
+                  data-aos-duration="800"
+                  data-aos-easing="ease-in-out"
+                  className="mt-9 w-full px-6 py-3.5 relative group overflow-hidden inline-block border-ourGold bg-ourGold text-white uppercase font-light text-base tracking-[2px] transition-transform duration-300 ease-out transform active:scale-95"
+               >
                   <span className="absolute top-0 left-0 flex w-0 h-full mb-0 transition-all duration-300 ease-out transform translate-y-0 bg-ourBlack group-hover:w-full opacity-90"></span>
                   <span className="relative group-hover:text-white">
                      register
@@ -186,7 +233,13 @@ const Register = () => {
                </button>
             </form>
 
-            <p className="text-base text-center sm:px-6 text-ourAsh">
+            <p
+               data-aos="fade-up"
+               data-aos-delay="150"
+               data-aos-duration="700"
+               data-aos-easing="ease-in-out"
+               className="text-base text-center sm:px-6 text-ourAsh"
+            >
                Already have an account?{"  "}
                <Link
                   to={"/login"}
@@ -196,7 +249,7 @@ const Register = () => {
                </Link>
             </p>
          </div>
-      </div>
+      </section>
    );
 };
 
