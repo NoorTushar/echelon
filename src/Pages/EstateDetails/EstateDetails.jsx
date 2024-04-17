@@ -83,7 +83,7 @@ const EstateDetails = () => {
                   className=""
                >
                   <h3 className="font-light text-[15px] tracking-[3px] uppercase mb-1.5">
-                     size
+                     area
                   </h3>
                   <p className="text-[15px] tracking-[0.25px]">{area}</p>
                </div>
