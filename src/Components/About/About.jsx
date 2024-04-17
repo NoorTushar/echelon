@@ -23,8 +23,14 @@ const About = () => {
          </div>
 
          <div className="relative">
-            <div className="lg:absolute lg:max-w-[40%] bg-[#252525] lg:top-1/2 lg:-translate-y-1/2">
-               <p className="p-6 lg:pl-10">
+            <div className="lg:absolute z-10 lg:max-w-[40%] bg-[#252525] lg:top-1/2 lg:-translate-y-1/2">
+               <p
+                  data-aos="fade-right"
+                  data-aos-duration="700"
+                  data-aos-delay="100"
+                  data-aos-easing="ease-in-out"
+                  className="p-6 lg:pl-10"
+               >
                   At Echelon, we pride ourselves on being more than just a real
                   estate agency – we are your trusted partner in finding your
                   dream home or investment property. With years of experience
@@ -38,6 +44,10 @@ const About = () => {
 
             <div className="lg:max-w-[80%] ml-auto">
                <img
+                  data-aos="zoom-in"
+                  data-aos-duration="700"
+                  data-aos-delay="100"
+                  data-aos-easing="ease-in-out"
                   className="w-full object-cover"
                   src="https://images.pexels.com/photos/7433822/pexels-photo-7433822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt=""
