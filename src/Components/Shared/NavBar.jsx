@@ -5,6 +5,21 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import useAuthContext from "../../Hooks/useAuthContext";
 import RegisterButton from "./RegisterButton";
 
+// Function to check if a URL is valid
+function isValidURL(url) {
+   if (!url) return false; // If URL is empty, consider it invalid
+   const pattern = new RegExp(
+      "^(https?:\\/\\/)?" + // protocol
+         "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" + // domain name
+         "((\\d{1,3}\\.){3}\\d{1,3}))" + // OR ip (v4) address
+         "(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*" + // port and path
+         "(\\?[;&a-z\\d%_.~+=-]*)?" + // query string
+         "(\\#[-a-z\\d_]*)?$",
+      "i"
+   ); // fragment locator
+   return !!pattern.test(url);
+}
+
 const navItems = (
    <>
       <li>
@@ -77,7 +92,9 @@ const NavBar = () => {
                      <img
                         className="size-8 md:size-10 object-cover rounded-full cursor-pointer"
                         src={
-                           user?.photoURL || "/public/default-profile-pic.png"
+                           isValidURL(user?.photoURL)
+                              ? user?.photoURL
+                              : "https://i.ibb.co/JztHRpy/default-profile-pic.png"
                         }
                         alt=""
                      ></img>
