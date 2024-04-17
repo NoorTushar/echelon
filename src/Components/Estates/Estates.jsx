@@ -18,6 +18,17 @@ const Estates = ({ allEstates }) => {
    const estates = allEstates;
    console.log(estates);
 
+   const mappedEstates = estates.map((eachState, index) => {
+      return (
+         <Estate
+            animation={index % 2 === 0 ? "fade-right" : "fade-left"}
+            duration="1000"
+            key={eachState.id}
+            eachState={eachState}
+         ></Estate>
+      );
+   });
+
    const mappedEstatesSlides = estates.map((eachState, index) => {
       return (
          <SwiperSlide>
@@ -40,6 +51,28 @@ const Estates = ({ allEstates }) => {
                data-aos-duration="700"
                data-aos-easing="ease-in-out"
             >
+               take a look at our
+            </h5>
+            <h2
+               data-aos="fade-up"
+               data-aos-duration="700"
+               data-aos-delay="100"
+               data-aos-easing="ease-in-out"
+            >
+               estates
+            </h2>
+         </div>
+
+         {/* states container */}
+         <div className="grid lg:grid-cols-2 gap-10">{mappedEstates}</div>
+
+         {/* section title */}
+         <div className="section-heading mt-20">
+            <h5
+               data-aos="fade-up"
+               data-aos-duration="700"
+               data-aos-easing="ease-in-out"
+            >
                our
             </h5>
             <h2
@@ -51,7 +84,6 @@ const Estates = ({ allEstates }) => {
                featured estates
             </h2>
          </div>
-
          <>
             <Swiper
                slidesPerView={1}
