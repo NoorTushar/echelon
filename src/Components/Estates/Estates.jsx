@@ -58,7 +58,9 @@ const Estates = ({ allEstates }) => {
          </div>
 
          {/* states container */}
-         <div className="grid lg:grid-cols-2 gap-10">{mappedEstates}</div>
+         <div className="grid lg:grid-cols-2 gap-10 w-full">
+            {mappedEstates}
+         </div>
 
          {/* section title */}
          <div className="section-heading mt-20">
