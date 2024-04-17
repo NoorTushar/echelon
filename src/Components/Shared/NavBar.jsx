@@ -12,9 +12,6 @@ const navItems = (
       <li>
          <NavLink to={"/about"}>About</NavLink>
       </li>
-      <li>
-         <NavLink to={"/offers"}>Special Offers</NavLink>
-      </li>
    </>
 );
 
@@ -37,9 +34,16 @@ const NavBar = () => {
                >
                   {navItems}
                   {user && (
-                     <li>
-                        <NavLink to={"/updateProfile"}>Update Profile</NavLink>
-                     </li>
+                     <>
+                        <li>
+                           <NavLink to={"/offers"}>Special Offers</NavLink>
+                        </li>
+                        <li>
+                           <NavLink to={"/updateProfile"}>
+                              Update Profile
+                           </NavLink>
+                        </li>
+                     </>
                   )}
                </ul>
             </div>
@@ -54,9 +58,14 @@ const NavBar = () => {
             <ul className="menu menu-horizontal px-1 space-x-4 text-ourAsh text-[15px] font-light *:tracking-[3px] uppercase">
                {navItems}
                {user && (
-                  <li>
-                     <NavLink to={"/updateProfile"}>Update Profile</NavLink>
-                  </li>
+                  <>
+                     <li>
+                        <NavLink to={"/offers"}>Special Offers</NavLink>
+                     </li>
+                     <li>
+                        <NavLink to={"/updateProfile"}>Update Profile</NavLink>
+                     </li>
+                  </>
                )}
             </ul>
          </div>
