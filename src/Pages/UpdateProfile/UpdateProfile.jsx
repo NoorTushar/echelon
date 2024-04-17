@@ -56,7 +56,10 @@ const UpdateProfile = () => {
                data-aos-easing="ease-in-out"
                className="text-sm font-light tracking-[5px] uppercase"
             >
-               hello there
+               hello{" "}
+               <span className="text-yellow-600">
+                  {user?.displayName ? user.displayName : "there"}
+               </span>
             </h5>
             <h2
                data-aos="fade-up"
@@ -68,7 +71,7 @@ const UpdateProfile = () => {
                update your profile
             </h2>
          </div>
-         <div className="w-full max-w-lg space-y-4 mx-auto p-8 pt-0 bg-ourBlack">
+         <div className="w-full max-w-lg space-y-4 mx-auto p-8 pt-0 pb-0 bg-ourBlack">
             <div>
                {user.photoURL && (
                   <img
