@@ -18,7 +18,7 @@ Live link: https://echelon-tushar.web.app/
 
 ## Notable NPM packages used:
 
--  AOS package
--  React-leaflet
--  React Hook Form
--  Swiper Slider
+-  AOS package - For transition animations
+-  React-leaflet - To display locations through real time maps
+-  React Hook Form - For ease of use in collecting and validating forms
+-  Swiper Slider - For awesome carousel animations.
