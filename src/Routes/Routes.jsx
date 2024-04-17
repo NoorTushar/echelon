@@ -40,7 +40,11 @@ export const router = createBrowserRouter([
          },
          {
             path: "/offers",
-            element: <OfferPage></OfferPage>,
+            element: (
+               <PrivateRoute>
+                  <OfferPage></OfferPage>
+               </PrivateRoute>
+            ),
          },
          {
             path: "/updateProfile",
