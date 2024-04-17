@@ -1,18 +1,33 @@
 import { useLoaderData } from "react-router-dom";
 import Estate from "../Estate/Estate";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+
+// import required modules
+import { FreeMode, Pagination } from "swiper/modules";
+
+import "./Estates.css";
+
 const Estates = ({ allEstates }) => {
    const estates = allEstates;
    console.log(estates);
 
-   const mappedEstates = estates.map((eachState, index) => {
+   const mappedEstatesSlides = estates.map((eachState, index) => {
       return (
-         <Estate
-            animation={index % 2 === 0 ? "fade-right" : "fade-left"}
-            duration="1000"
-            key={eachState.id}
-            eachState={eachState}
-         ></Estate>
+         <SwiperSlide>
+            <Estate
+               animation={index % 2 === 0 ? "fade-right" : "fade-left"}
+               duration="1000"
+               key={eachState.id}
+               eachState={eachState}
+            ></Estate>
+         </SwiperSlide>
       );
    });
 
@@ -25,7 +40,7 @@ const Estates = ({ allEstates }) => {
                data-aos-duration="700"
                data-aos-easing="ease-in-out"
             >
-               get to know
+               our
             </h5>
             <h2
                data-aos="fade-up"
@@ -33,12 +48,38 @@ const Estates = ({ allEstates }) => {
                data-aos-delay="100"
                data-aos-easing="ease-in-out"
             >
-               about us
+               featured estates
             </h2>
          </div>
 
-         {/* states container */}
-         <div className="grid lg:grid-cols-2 gap-6">{mappedEstates}</div>
+         <>
+            <Swiper
+               slidesPerView={1}
+               spaceBetween={30}
+               freeMode={true}
+               pagination={{
+                  clickable: true,
+               }}
+               breakpoints={{
+                  640: {
+                     slidesPerView: 1,
+                     spaceBetween: 20,
+                  },
+                  768: {
+                     slidesPerView: 1,
+                     spaceBetween: 40,
+                  },
+                  1024: {
+                     slidesPerView: 2,
+                     spaceBetween: 50,
+                  },
+               }}
+               modules={[FreeMode, Pagination]}
+               className="mySwiper py-10"
+            >
+               {mappedEstatesSlides}
+            </Swiper>
+         </>
       </section>
    );
 };

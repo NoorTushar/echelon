@@ -3,14 +3,12 @@ import LoginButton from "./LoginButton";
 import LogoutButton from "./LogoutButton";
 import { GiHamburgerMenu } from "react-icons/gi";
 import useAuthContext from "../../Hooks/useAuthContext";
+import RegisterButton from "./RegisterButton";
 
 const navItems = (
    <>
       <li>
          <NavLink to={"/"}>Home</NavLink>
-      </li>
-      <li>
-         <NavLink to={"/about"}>About</NavLink>
       </li>
    </>
 );
@@ -88,7 +86,11 @@ const NavBar = () => {
                   <LogoutButton></LogoutButton>
                </>
             ) : (
-               <LoginButton></LoginButton>
+               <>
+                  {" "}
+                  <RegisterButton></RegisterButton>
+                  <LoginButton></LoginButton>
+               </>
             )}
          </div>
       </nav>
