@@ -23,7 +23,7 @@ const About = () => {
          </div>
 
          <div className="lg:flex">
-            <div className=" p-4 lg:w-1/3 bg-ourBlack  h-min">
+            <div className=" p-4 lg:w-1/3 bg-[#252525]  h-min">
                <p>
                   At Echelon, we pride ourselves on being more than just a real
                   estate agency – we are your trusted partner in finding your

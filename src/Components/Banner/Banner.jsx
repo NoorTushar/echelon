@@ -7,7 +7,13 @@ import "swiper/css/bundle";
 // import required modules
 import "swiper/css/pagination";
 
-import { Pagination } from "swiper/modules";
+import {
+   Autoplay,
+   EffectCreative,
+   EffectFade,
+   Navigation,
+   Pagination,
+} from "swiper/modules";
 
 import { Link } from "react-router-dom";
 
@@ -19,10 +25,19 @@ const Banner = ({ allEstates }) => {
    return (
       <>
          <Swiper
+            spaceBetween={30}
+            effect={"fade"}
+            navigation={true}
             pagination={{
                clickable: true,
             }}
-            modules={[Pagination]}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{
+               delay: 3500,
+               disableOnInteraction: false,
+            }}
+            modules={[Pagination, Navigation, Autoplay, EffectFade]}
             className="mySwiper"
          >
             {/* item 01 */}
