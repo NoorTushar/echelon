@@ -21,8 +21,7 @@ const Estates = ({ allEstates }) => {
    const mappedEstates = estates.map((eachState, index) => {
       return (
          <Estate
-            animation={index % 2 === 0 ? "fade-right" : "fade-left"}
-            duration="1000"
+            animation={(index + 1) % 2 === 0 ? "fade-left" : "fade-right"}
             key={eachState.id}
             eachState={eachState}
          ></Estate>
@@ -32,12 +31,7 @@ const Estates = ({ allEstates }) => {
    const mappedEstatesSlides = estates.map((eachState, index) => {
       return (
          <SwiperSlide>
-            <Estate
-               animation={index % 2 === 0 ? "fade-right" : "fade-left"}
-               duration="1000"
-               key={eachState.id}
-               eachState={eachState}
-            ></Estate>
+            <Estate key={eachState.id} eachState={eachState}></Estate>
          </SwiperSlide>
       );
    });

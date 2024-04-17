@@ -16,8 +16,14 @@ const Estate = ({ eachState, animation, duration }) => {
       facilities,
       estate_image_small,
    } = eachState;
+
    return (
-      <div className=" h-full bg-[#252525]">
+      <div
+         className=" h-full bg-[#252525]"
+         data-aos={animation}
+         data-aos-duration="1000"
+         data-aos-delay="100"
+      >
          <div
             className="relative overflow-hidden"
             data-aos="zoom-in"
