@@ -204,9 +204,9 @@ const Register = () => {
                      />
                      <span className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer text-ourAsh">
                         {showPassword ? (
-                           <FaEyeSlash onClick={() => setShowPassword(false)} />
+                           <FaRegEye onClick={() => setShowPassword(false)} />
                         ) : (
-                           <FaRegEye onClick={() => setShowPassword(true)} />
+                           <FaEyeSlash onClick={() => setShowPassword(true)} />
                         )}
                      </span>
                   </div>
