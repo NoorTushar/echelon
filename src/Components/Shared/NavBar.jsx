@@ -13,7 +13,7 @@ const navItems = (
          <NavLink to={"/about"}>About</NavLink>
       </li>
       <li>
-         <NavLink to={"/contact"}>Contact</NavLink>
+         <NavLink to={"/offers"}>Special Offers</NavLink>
       </li>
    </>
 );
