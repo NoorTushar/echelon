@@ -1,4 +1,4 @@
-import SectionTitle from "../Shared/SectionTitle";
+import "./About.css";
 
 const About = () => {
    return (
@@ -22,9 +22,9 @@ const About = () => {
             </h2>
          </div>
 
-         <div className="lg:flex">
-            <div className=" p-4 lg:w-1/3 bg-[#252525]  h-min">
-               <p>
+         <div className="relative">
+            <div className="lg:absolute lg:max-w-[40%] bg-[#252525] lg:top-1/2 lg:-translate-y-1/2">
+               <p className="p-6 lg:pl-10">
                   At Echelon, we pride ourselves on being more than just a real
                   estate agency – we are your trusted partner in finding your
                   dream home or investment property. With years of experience
@@ -36,8 +36,9 @@ const About = () => {
                </p>
             </div>
 
-            <div className="lg:w-2/3 ">
+            <div className="lg:max-w-[80%] ml-auto">
                <img
+                  className="w-full object-cover"
                   src="https://images.pexels.com/photos/7433822/pexels-photo-7433822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                   alt=""
                />

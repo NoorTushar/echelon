@@ -28,16 +28,13 @@ const Banner = ({ allEstates }) => {
             spaceBetween={30}
             effect={"fade"}
             navigation={true}
-            pagination={{
-               clickable: true,
-            }}
             slidesPerView={1}
             loop={true}
             autoplay={{
                delay: 3500,
                disableOnInteraction: false,
             }}
-            modules={[Pagination, Navigation, Autoplay, EffectFade]}
+            modules={[Navigation, Autoplay, EffectFade]}
             className="mySwiper"
          >
             {/* item 01 */}
