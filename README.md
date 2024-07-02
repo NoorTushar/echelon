@@ -1,20 +1,22 @@
-# Website: Echelon
+# Website: Echelon | Real Estate Website
 
 Live link: https://echelon-tushar.web.app/
 
 ## Features and Characteristics:
 
--  Explore the exotic properties
--  Elegant website design
--  Eye soothing sober animations
--  Registration and can also Login through Google and GitHub account.
--  You can update your username and photo URL anytime you want.
+-  Users can explore exotic properties along with their map location and details.
+-  Elegant website design with sober animations.
+-  Login through Google.
 -  Exclusive offers only for registered users.
 -  Only after login, you can see the details of each property which includes - a stunning cover image, segment name, property title, description, price, location, status and area.
--  Also when viewing each property in details, you will be able to spot the location through interactive map.
--  Testimonial section with classic carousel.
 -  Fully responsive website for mobile, tablet and desktop.
 -  Contact information in the footer section.
+
+## Technologies Used:
+
+-  ReactJS
+-  TailwindCSS
+-  Firebase
 
 ## Notable NPM packages used:
 
@@ -22,3 +24,25 @@ Live link: https://echelon-tushar.web.app/
 -  React-leaflet - To display locations through real time maps
 -  React Hook Form - For ease of use in collecting and validating forms
 -  Swiper Slider - For awesome carousel animations.
+
+## If you want to clone the project:
+
+1. Make sure to install the npm packages after downloading the repository
+
+Open the project terminal and write `npm i`
+
+2. Make sure to have firebase project created and then create `.env.local` file in the root directory. In the `.env.local` file write like this:
+
+VITE_APIKEY=xyz
+
+VITE_AUTHDOMAIN=xyz
+
+VITE_PROJECTID=xyz
+
+VITE_STORAGEBUCKET=xyz
+
+VITE_MESSAGINGSENDERID=xyz
+
+VITE_APPID=xyz
+
+-  replace the xyz with your actual firebase auth configuration
