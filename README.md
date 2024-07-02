@@ -5,12 +5,12 @@ Live link: https://echelon-tushar.web.app/
 ## Features and Characteristics:
 
 -  Users can explore exotic properties along with their map location and details.
+-  Only after login, you can see the details of each property which includes - a stunning cover image, segment name, property title, description, price, location, status and area.
 -  Elegant website design with sober animations.
 -  Login through Google.
 -  Exclusive offers only for registered users.
--  Only after login, you can see the details of each property which includes - a stunning cover image, segment name, property title, description, price, location, status and area.
+
 -  Fully responsive website for mobile, tablet and desktop.
--  Contact information in the footer section.
 
 ## Technologies Used:
 
